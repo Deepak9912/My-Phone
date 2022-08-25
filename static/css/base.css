@@ -1,0 +1,24 @@
+html{
+    height: 100%;
+}
+
+body{
+    
+}
+
+/* used from bulma */
+.icon{
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black{
+    border: solid 1px #000 !important ;
+}
