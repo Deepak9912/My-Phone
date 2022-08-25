@@ -45,8 +45,8 @@
 
 <body>
   <!--navbar-->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-    <div class="container">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark white scrolling-navbar py-3">
+    <div class="container-fluid">
 
       <!-- Brand -->
       <a class="navbar-brand waves-effect" href="{% url 'home' %}">
@@ -76,7 +76,7 @@
         <!-- center search bar-->
         <form class="form-inline my-2 my-lg-0" method="GET" action="">
           <input class="form-control mr-sm-2" type="search" name="query" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
         </form>
 
         <!-- Right account details-->
@@ -103,7 +103,7 @@
           <li class="nav-item">
             <a href="" class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link">
               <div class="text-center">
-                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                <div><i class="fas fa-shopping-bag fa-lg text-light"></i></div>
                 <p class="my-0">
                   {% if grand_total %}
                     €{{ grand_total|floatformat:2 }}
@@ -115,6 +115,7 @@
             </a>
           </li>
         </ul>
+      </div>
       </div>
   </nav>
   <!--navbar ends-->

@@ -3,7 +3,23 @@ html{
 }
 
 body{
-    
+    background: url('/media/cover.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 100px);
+    color: #fff; 
+}
+
+.shop-btn{
+    background: black;
+    color: #fafafa;
+    min-width: 240px;
+}
+
+.shop-btn:hover,
+.shop-btn:active,
+.shop-btn:focus {
+    background: #222;
+    color: #fafafa;
 }
 
 /* used from bulma */
@@ -13,6 +29,10 @@ body{
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.home-logo{
+
 }
 
 .text-black {
