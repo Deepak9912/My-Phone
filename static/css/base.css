@@ -9,6 +9,8 @@ body{
     color: #fff; 
 }
 
+/* navigation bar and header */
+
 .shop-btn{
     background: black;
     color: #fafafa;
@@ -20,6 +22,17 @@ body{
 .shop-btn:focus {
     background: #222;
     color: #fafafa;
+}
+
+/* home page */
+.home-btn {
+    background-color: #000;
+    border: solid 2px #fafafa;
+}
+
+.home-btn a{
+    text-decoration: none;
+    font-size: 22px;
 }
 
 /* used from bulma */
