@@ -5,6 +5,13 @@ class Category(models.Model):
     """
     category description
     """
+
+    class Meta:
+        """
+        Specifies how the title will be displayed on the admin panel
+        """
+        verbose_name_plural = 'Categories'
+
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=300, null=True, blank=True)
 
