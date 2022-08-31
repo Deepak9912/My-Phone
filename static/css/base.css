@@ -55,6 +55,12 @@ body{
     z-index: -1;
 }
 
+.phone_img_card_container{
+    height: 200px;
+    text-align: center;
+    margin: 0;
+}
+
 .text-black {
     color: #000 !important;
 }
