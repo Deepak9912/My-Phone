@@ -1,0 +1,34 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "samsung",
+            "friendly_name": "Samsung"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "iphone",
+            "friendly_name": "iPhone"
+        } 
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "lenovo",
+            "friendly_name": "Lenovo"
+        } 
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "huawei",
+            "friendly_name": "Huawei"
+        } 
+    }
+]
