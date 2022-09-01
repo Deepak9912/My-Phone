@@ -45,20 +45,22 @@ body{
 }
 
 /* products page */
-.overlay{
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: #fafafa;
-    z-index: -1;
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
-.phone_img_card_container{
-    height: 200px;
-    text-align: center;
-    margin: 0;
+.shop-btn {
+    background-color: #1c3a42;
+    border: solid 2px white;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
 .text-black {
@@ -67,4 +69,11 @@ body{
 
 .border-black{
     border: solid 1px #000 !important ;
+}
+
+/* -------------------------------- Media Queries */
+@media (min-width: 668px) {
+    .product-container{
+        margin-top: auto;
+    }
 }
