@@ -45,6 +45,10 @@ body{
 }
 
 /* products page */
+.header-container {
+    padding-top: 300px;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -83,6 +87,16 @@ body{
     height: 400px;
     object-fit: cover;
     border: solid 2px white;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 /* -------------------------------- Media Queries */

@@ -4,10 +4,9 @@
 {% block page_header %}
 {% endblock %}
 
-{% block extra_title %} |Products {% endblock %}
-
 {% block content %}
-<div class="container-fluid bg-white">
+<div class="overlay"></div>
+<div class="container-fluid">
     <!--row one for page title and any selected category-->
     <div class="row mt-5">
         <div class="col text-center mt-5">
@@ -36,7 +35,7 @@
                         <div class="card-body phones-main btns">
                             <div class="row">
                                 <div class="col phone_img_card_container">
-                                    <a href="">
+                                    <a href="{% url 'product_detail' product.id %}">
                                         <img src="{{ product.image.url }}" alt="An image to show {{ product.name }}"
                                             height="300" width="250">
                                     </a>
@@ -52,7 +51,7 @@
                                     class="fas fa-heart heart mr-2 mt-2"></i>{{product.rating}}/5</p>
                             <div class="row">
                                 <div class="col-12 btns">
-                                    <a href="">
+                                    <a href="{% url 'product_detail' product.id %}">
                                         <p class="text-light shop-btn text-center mt-2">
                                             More details
                                         </p>
