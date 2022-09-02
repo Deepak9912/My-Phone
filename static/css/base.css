@@ -71,6 +71,20 @@ body{
     border: solid 1px #000 !important ;
 }
 
+/* -------------------------------- products details page */
+.phone_image_container{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.phone_image{
+    width:  300px;
+    height: 400px;
+    object-fit: cover;
+    border: solid 2px white;
+}
+
 /* -------------------------------- Media Queries */
 @media (max-width: 668px) {
     .product-container{
