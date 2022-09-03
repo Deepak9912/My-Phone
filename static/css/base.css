@@ -9,7 +9,13 @@ body{
     color: #fff; 
 }
 
-/* navigation bar and header */
+/*...........................................General styling*/
+.small-divider {
+    display: none;
+}
+
+
+/*.................................navigation bar and header */
 
 .shop-btn{
     background: black;
@@ -24,7 +30,7 @@ body{
     color: #fafafa;
 }
 
-/* home page */
+/*.................................home page */
 .home-btn {
     background-color: #000;
     border: solid 2px #fafafa;
@@ -35,7 +41,7 @@ body{
     font-size: 22px;
 }
 
-/* used from bulma */
+/*................................. used from bulma */
 .icon{
     align-items: center;
     display: inline-flex;
@@ -44,7 +50,7 @@ body{
     width: 1.5rem;
 }
 
-/* products page */
+/*.....................................products page */
 .header-container {
     padding-top: 300px;
 }
@@ -99,9 +105,47 @@ body{
 	z-index: -1;
 }
 
-/* -------------------------------- Media Queries */
-@media (max-width: 668px) {
-    .product-container{
-        margin-top: auto;
+.phone-category {
+    color:#df3419;
+    text-decoration: none;
+}
+
+.extra-product-info a {
+    text-decoration: none;
+    color: #1c3a42;
+}
+
+/*...................................Media Queries */
+@media (max-width: 991px) {
+    body {
+        height: calc(100vh - 200px);
     }
+}
+
+@media (max-width: 860px) {
+    
+}
+
+@media (max-width: 770px) {
+    .small-search-show {
+        display: block;
+        float: right;
+    }
+    .small-search-hide {
+        display: none;
+    }
+    .nav-icons ul {
+        float: right;
+        padding-right: 3px;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        height: calc(100vh - 180px);
+    }
+}
+
+@media (max-width: 400px) {
+    
 }

@@ -65,9 +65,9 @@
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline mb-0 main-margin text-lg-right">
           <li class="list-inline-item">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
-            <p class="my-2">My Account</p> 
+            <p class="my-2 text-light text-decoration-none">My Account</p> 
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="account-options">
               {% if request.user.is_authenticated %}
@@ -110,8 +110,8 @@
       </nav>
     </div>
     <div id="delivery-banner" class="row text-center">
-      <div class="col bg-info text-light">
-          <h4 class="logo-font my-1">Free delivery on orders over!</h4>                
+      <div class="col bg-danger text-light">
+          <h4 class="logo-font my-1">Free delivery on orders over €50.00</h4>                
       </div>            
     </div>
   </header>

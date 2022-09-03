@@ -14,6 +14,7 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container-fluid">
+    <!--row 1-->
     <div class="row">
         <!--product image column-->
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
@@ -32,11 +33,64 @@
         </div>
         <!--product description column-->
         <div class="col-12 col-md-6 col-lg-6">
-            <div class="product-details-container mb-5 mt-md-5">
-                <p class="mb-0">{{ product.name }}</p>
+            <div class="product-details-container mb-5 mt-md-5 text-dark">
+                <p class="mb-0"><strong>{{ product.name }}</strong></p>
                 <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                {% if product.rating %}
+                    <small><i class="fas fa-star mr-1">{{ product.rating }} / 5</i></small>
+                {% else %}
+                    <small>No Rating</small>
+                {% endif %}
             </div>
         </div>
+    </div>
+    <!--row 2-->
+    <!--Edit and delete functionality for super user-->
+    {% if request.user.is_superuser %}
+    <div class="row">
+        <div class="col-6 btns">
+            <a href="#">
+                <p class="text-center">Edit</p>
+            </a>
+        </div>
+        <div class="col-6 btns">
+            <a href="#">
+                <p class="text-center">Delete</p>
+            </a>
+        </div>
+    </div>
+    {% endif %}
+    <hr/>
+    <!--Row 3 with delivery information-->
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 extra-product-info">
+            <a href="#delivery">
+                Delivery Information
+            </a>
+            <a href="{% url 'products' %}?category={{ product.category }}">
+                <p class="mt-2">
+                    Category: <span class="phone-category">{{ product.category.friendly_name }}</span>
+                </p>
+            </a>
+            <hr class="small-divider">
+        </div>
+        <div class="col-xs-12 col-sm-6 extra-product-info">
+            <a href="#product-review-section">
+                <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+                Reviews
+                </p>
+            </a>
+        </div>
+        <p class="p-4 text-dark">
+            {{ product.description }}
+        </p>
+        <hr/>
+
     </div>
 </div>
 {% endblock %}
