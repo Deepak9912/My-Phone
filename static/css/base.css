@@ -3,10 +3,8 @@ html{
 }
 
 body{
-    background: url('/media/cover.jpeg') no-repeat center center fixed;
-    background-size: cover;
     height: calc(100vh - 100px);
-    color: #fff; 
+    color: #000; 
 }
 
 /*...........................................General styling*/
@@ -48,11 +46,18 @@ body{
     font-size: 22px;
 }
 
+.main-img {
+    background: url('/static/home/phone-intro.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    margin-top: 20px;
+}
+
 /*.................................footer */
 .footer-container{
-    width: 260px;
-    height: 260px;
-    padding: 15px;
+    width: 220px;
+    height: 220px;
+    padding: 5px;
     border-style: solid;
     border-color: #000;
     border-width: 1px;
@@ -61,7 +66,7 @@ body{
 }
 
 .footer-image{
-    background: url('/media/footer/footer.jpeg') no-repeat center center;
+    background: url('/static/footer/footer.jpg') no-repeat center center;
     background-size: cover;
     height: 100%;
     border-radius: 50%;
@@ -184,6 +189,9 @@ body{
     body {
         height: calc(100vh - 100px);
     }
+    #jumbotron {
+        margin-top: 0 !important;
+    }
 }
 
 @media (max-width: 860px) {
@@ -207,6 +215,12 @@ body{
 @media (max-width: 550px) {
     body {
         height: calc(100vh - 200px);
+    }
+    #intro-container {
+        margin-top: 6rem;
+     }
+    #jumbotron h1 {
+        font-size: 2rem;
     }
 }
 
