@@ -111,7 +111,7 @@
     </div>
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-danger text-light">
-          <h4 class="logo-font my-1">Free delivery on orders over €50.00</h4>                
+          <h4 class="my-1">Free delivery on orders over €50.00</h4>                
       </div>            
     </div>
   </header>
@@ -127,6 +127,88 @@
 
   {% block content %}
   {% endblock %}
+
+  <!--footer-->
+  <section id="footer-top">
+    <div class="container text-center text-md-start mt-4">
+      <div class="row mt-2">
+        <!--col 1-->
+        <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-5">
+          <h6 class="text-uppercase mb-3">
+            My phone
+          </h6>
+          <p>
+            We provide the best phone deals!!
+          </p>
+          <div class="footer-container">
+            <div class="footer-image"></div>
+          </div>
+        </div>
+        <!--col 2-->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-5">
+          <h6 class="text-uppercase mb-3">
+            Out top brands
+          </h6>
+          <p>
+            <a href="{% url 'products' %}?category=samsung" class="text-reset">Samsung</a>
+          </p>
+          <p>
+            <a href="{% url 'products' %}?category=iphone" class="text-reset">iPhone</a>
+          </p>
+          <p>
+            <a href="{% url 'products' %}?category=redmi" class="text-reset">Redmi</a>
+          </p>
+          <p>
+            <a href="{% url 'products' %}?category=lenovo" class="text-reset">Lenovo</a>
+          </p>
+        </div>
+        <!--col 3-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-5">
+          <h6 class="text-uppercase mb-3">
+            Useful links
+          </h6>
+          <p>
+            <a href="{% url 'products' %}" class="text-reset">Our Products</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">Our Blog.</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">View Shopping Basket</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">Your Wishlist</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">Account</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer-bottom" class="page-footer font-small pt-4 navbar-light">
+    <div class="container">
+      <!--social media links-->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com" target="_blank" aria-label="link to facebook page"><i class="fab fa-facebook-f fa-lg"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.twitter.com" target="_blank" aria-label="link to twitter page"><i class="fab fa-twitter fa-lg"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com" target="_blank" aria-label="link to instagram page"><i class="fab fa-instagram fa-lg"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com" target="_blank" aria-label="link to linkedin page"><i class="fab fa-linkedin-in fa-lg"></i></a>
+        </li>
+      </ul>
+    </div>
+    <!-- Copyright Information -->
+    <div class="text-center py-3 text-black">
+      © 2022 Copyright: My phone
+  </div>
+  </section>
 
   {% block loadjs %}
   {% endblock %}
