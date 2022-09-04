@@ -6,19 +6,19 @@
         <div class="col"></div>
     </div>
 </div>
-<div class="container h-100">
+<div class="container-fluid bg-white h-100">
     <div class="row h-100">
-        <div class="col-11 col-md-6 my-auto">
-            <h1 class="text-black">
-                Ooops! 400 - Bad Request.
-            </h1>
+        <div class="col-12 my-auto text-center">
+            <i class="fa-solid fa-face-confused text-header text"></i>
+            <p class="display-4 text-dark mt-4 text-header">
+                The page you are looking for isn't available
+            </p>
             <div class="my-5">
-                <h4>
-                    <a href="{% url 'home' %}" 
-                        class="btn btn-outline-warning rounded-0 text-uppercase py-3">
-                            Return to Homepage
+                <p>
+                    <a href="{% url 'products' %}" class="btn btn-lg rounded-0 py-3">
+                        Back to products <i class="fa-solid fa-arrow-right text-dark text"></i>
                     </a>
-                </h4>
+                </p>
             </div>
         </div>
     </div>

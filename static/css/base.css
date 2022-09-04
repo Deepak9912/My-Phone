@@ -44,6 +44,16 @@ body{
     font-size: 22px;
 }
 
+/*.................................error page */
+
+.text-header{
+    font-size: 25px;
+}
+
+.text{
+    font-size: 20px;
+}
+
 /*................................. used from bulma */
 .icon{
     align-items: center;
@@ -149,7 +159,7 @@ body{
 /*...................................Media Queries */
 @media (max-width: 991px) {
     body {
-        height: calc(100vh - 200px);
+        height: calc(100vh - 100px);
     }
 }
 
@@ -173,7 +183,7 @@ body{
 
 @media (max-width: 550px) {
     body {
-        height: calc(100vh - 180px);
+        height: calc(100vh - 200px);
     }
 }
 
