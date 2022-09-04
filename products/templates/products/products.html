@@ -110,10 +110,19 @@
         </div>
     </div>
 </div>
+<button type="button" class="btn btn-outline-warning btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</button>
 {% endblock %}
 
 {% block loadjs %}
 {{ block.super }}
+<script type="text/javascript">
+    $('#btn-back-to-top').click(function(e){
+        window.scrollTo(0, 0)
+    })
+</script>
+
 <script type="text/javascript">
     $('#sort-selector').change(function() {
         let selector = $(this);

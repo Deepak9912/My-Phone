@@ -81,6 +81,34 @@ body{
     border: solid 1px #000 !important ;
 }
 
+.btn-outline-warning {
+    color: #010901 !important;
+    border: 1px solid black;
+ }
+ 
+ .btn-outline-warning:hover,
+ .btn-outline-warning:active,
+ .btn-outline-warning:focus {
+    color: #010901 !important;
+    background-color: #fafafa !important;
+    border: 1px solid black;
+ }
+
+ .btn-outline-warning:active{
+    padding-top: 0.2px;
+ }
+
+ #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: block;
+}
+
+#btn-back-to-top i {
+    color: #010901;
+}
 /* -------------------------------- products details page */
 .phone_image_container{
     width: 100%;
