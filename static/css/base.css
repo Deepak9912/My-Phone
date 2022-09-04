@@ -16,6 +16,9 @@ body{
 
 
 /*.................................navigation bar and header */
+.header-container {
+    padding-top: 100px;
+}
 
 .shop-btn{
     background: black;
