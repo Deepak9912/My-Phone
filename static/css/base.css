@@ -115,6 +115,10 @@ body{
     color: #1c3a42;
 }
 
+a.category-badge > span.badge:hover {
+    background: #0d0d0d !important;
+    color: #fff !important;
+}
 /*...................................Media Queries */
 @media (max-width: 991px) {
     body {

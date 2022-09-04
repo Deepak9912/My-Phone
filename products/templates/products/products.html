@@ -11,7 +11,7 @@
     <div class="row mt-5">
         <div class="col text-center mt-5">
             <h2 class="logo-font text-black">All Products</h2>
-            <hr class="w-50 mb-1">
+            <hr class="w-50 m-auto">
         </div>
     </div>
     <div class="row">
@@ -27,7 +27,29 @@
     <!--row for product info-->
     <div class="row mt-4">
         <div class="product-container col-10 offset-1">
-            <div class="row mt-3 mb-2"></div>
+            <div class="row mt-3 mb-2">
+                <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                    <div class="sort-select-wrapper w-50">
+                        <select id="sort-selector" class="custom-select custom-select-sm rounded-4 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
+                            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
+                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                            <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
+                            <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-md-first">
+                    <p class="mt-3 text-center text-md-left text-black">
+                        {% if search_query or current_categories or current_sorting != 'None_None' %}
+                            <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                        {% endif %}
+                        {{ products|length }} Products{% if search_query %} found for <strong>"{{ search_query }}"</strong>{% endif %}
+                    </p>
+                </div>
+            </div>
             <div class="row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -47,8 +69,12 @@
                                 <p class="phone-category text-center text-black mt-2">
                                     {{ product.category.friendly_name }}</p>
                             </a>
+                            {% if product.rating %}
                             <p class="text-center text-black"><i
-                                    class="fas fa-heart heart mr-2 mt-2"></i>{{product.rating}}/5</p>
+                                    class="fas fa-heart heart mr-2 mt-2"></i>{{product.rating}} / 5</p>
+                            {% else %}
+                            <p class="small">No Rating</p>
+                            {% endif %}
                             <div class="row">
                                 <div class="col-12 btns">
                                     <a href="{% url 'product_detail' product.id %}">
