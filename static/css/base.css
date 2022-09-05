@@ -46,12 +46,26 @@ body{
     font-size: 22px;
 }
 
-.main-img {
-    background: url('/static/home/phone-intro.jpeg') no-repeat center center;
-    background-size: cover;
-    height: 60vh;
-    margin-top: 20px;
-}
+.features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .features-icons .features-icons-item {
+    max-width: 20rem;
+  }
+  .features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+  }
+  .features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+  }
+  .features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+  }
+  .features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+  }
+  
 
 /*.................................footer */
 .footer-container{
