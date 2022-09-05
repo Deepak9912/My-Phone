@@ -65,7 +65,30 @@ body{
   .features-icons .features-icons-item .features-icons-icon i {
     font-size: 4.5rem;
   }
+  .testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .testimonials .testimonial-item {
+    max-width: 18rem;
+  }
+  .testimonials .testimonial-item img {
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+  }
   
+  .showcase .showcase-text {
+    padding: 3rem;
+  }
+  .showcase .showcase-img {
+    min-height: 20rem;
+    background-size: cover;
+  }
+  @media (min-width: 768px) {
+    .showcase .showcase-text {
+      padding: 7rem;
+    }
+  }  
 
 /*.................................footer */
 .footer-container{
