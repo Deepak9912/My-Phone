@@ -1,10 +1,10 @@
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     height: calc(100vh - 100px);
-    color: #000; 
+    color: #000;
 }
 
 /*...........................................General styling*/
@@ -14,15 +14,15 @@ body{
 
 
 /*.................................navigation bar and header */
-.navbar-light{
-    background-color:#E6E8E6 !important;
+.navbar-light {
+    background-color: #E6E8E6 !important;
 }
 
 .header-container {
     padding-top: 100px;
 }
 
-.shop-btn{
+.shop-btn {
     background: black;
     color: #fafafa;
     min-width: 240px;
@@ -41,7 +41,7 @@ body{
     border: solid 2px #fafafa;
 }
 
-.home-btn a{
+.home-btn a {
     text-decoration: none;
     font-size: 22px;
 }
@@ -49,49 +49,59 @@ body{
 .features-icons {
     padding-top: 7rem;
     padding-bottom: 7rem;
-  }
-  .features-icons .features-icons-item {
+}
+
+.features-icons .features-icons-item {
     max-width: 20rem;
-  }
-  .features-icons .features-icons-item .features-icons-icon {
+}
+
+.features-icons .features-icons-item .features-icons-icon {
     height: 7rem;
-  }
-  .features-icons .features-icons-item .features-icons-icon i {
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
     font-size: 4.5rem;
-  }
-  .features-icons .features-icons-item .features-icons-icon {
+}
+
+.features-icons .features-icons-item .features-icons-icon {
     height: 7rem;
-  }
-  .features-icons .features-icons-item .features-icons-icon i {
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
     font-size: 4.5rem;
-  }
-  .testimonials {
+}
+
+.testimonials {
     padding-top: 7rem;
     padding-bottom: 7rem;
-  }
-  .testimonials .testimonial-item {
+}
+
+.testimonials .testimonial-item {
     max-width: 18rem;
-  }
-  .testimonials .testimonial-item img {
+}
+
+.testimonials .testimonial-item img {
     max-width: 12rem;
     box-shadow: 0px 5px 5px 0px #adb5bd;
-  }
-  
-  .showcase .showcase-text {
+}
+
+.showcase .showcase-text {
     padding: 3rem;
-  }
-  .showcase .showcase-img {
+}
+
+.showcase .showcase-img {
     min-height: 20rem;
     background-size: cover;
-  }
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .showcase .showcase-text {
-      padding: 7rem;
+        padding: 7rem;
     }
-  }  
+}
 
 /*.................................footer */
-.footer-container{
+.footer-container {
     width: 220px;
     height: 220px;
     padding: 5px;
@@ -102,7 +112,7 @@ body{
     margin: 0 auto;
 }
 
-.footer-image{
+.footer-image {
     background: url('/static/footer/footer.jpg') no-repeat center center;
     background-size: cover;
     height: 100%;
@@ -111,16 +121,16 @@ body{
 
 /*.................................error page */
 
-.text-header{
+.text-header {
     font-size: 25px;
 }
 
-.text{
+.text {
     font-size: 20px;
 }
 
 /*................................. used from bulma */
-.icon{
+.icon {
     align-items: center;
     display: inline-flex;
     justify-content: center;
@@ -134,13 +144,13 @@ body{
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 .shop-btn {
@@ -155,28 +165,28 @@ body{
     color: #000 !important;
 }
 
-.border-black{
-    border: solid 1px #000 !important ;
+.border-black {
+    border: solid 1px #000 !important;
 }
 
 .btn-outline-warning {
     color: #010901 !important;
     border: 1px solid black;
- }
- 
- .btn-outline-warning:hover,
- .btn-outline-warning:active,
- .btn-outline-warning:focus {
+}
+
+.btn-outline-warning:hover,
+.btn-outline-warning:active,
+.btn-outline-warning:focus {
     color: #010901 !important;
     background-color: #fafafa !important;
     border: 1px solid black;
- }
+}
 
- .btn-outline-warning:active{
+.btn-outline-warning:active {
     padding-top: 0.2px;
- }
+}
 
- #btn-back-to-top {
+#btn-back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -187,32 +197,33 @@ body{
 #btn-back-to-top i {
     color: #010901;
 }
+
 /* -------------------------------- products details page */
-.phone_image_container{
+.phone_image_container {
     width: 100%;
     text-align: center;
     margin: 0;
 }
 
-.phone_image{
-    width:  300px;
+.phone_image {
+    width: 300px;
     height: 400px;
     object-fit: cover;
     border: solid 2px white;
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 .phone-category {
-    color:#df3419;
+    color: #df3419;
     text-decoration: none;
 }
 
@@ -224,13 +235,43 @@ body{
 .card-img,
 .card-img-top,
 .card-img-bottom {
-  width: 100%;
+    width: 80%;
 }
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+/*...................................Bag */
+.table-image-width {
+    width: 10%;
+}
+
+.center-quantity {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.quantity-width {
+    width: 200px;
+}
+
+.qty_input {
+    width: 50px;
+    text-align: center;
+}
+
+@media(max-width: 500px) {
+    .table-image-width {
+        width: 8%;
+    }
+
+    .table-text {
+        font-size: 14px;
+    }
 }
 
 /*...................................Media Queries */
@@ -238,23 +279,24 @@ body{
     body {
         height: calc(100vh - 100px);
     }
+
     #jumbotron {
         margin-top: 0 !important;
     }
 }
 
-@media (max-width: 860px) {
-    
-}
+@media (max-width: 860px) {}
 
 @media (max-width: 770px) {
     .small-search-show {
         display: block;
         float: right;
     }
+
     .small-search-hide {
         display: none;
     }
+
     .nav-icons ul {
         float: right;
         padding-right: 3px;
@@ -265,14 +307,14 @@ body{
     body {
         height: calc(100vh - 200px);
     }
+
     #intro-container {
         margin-top: 6rem;
-     }
+    }
+
     #jumbotron h1 {
         font-size: 2rem;
     }
 }
 
-@media (max-width: 400px) {
-    
-}
+@media (max-width: 400px) {}
