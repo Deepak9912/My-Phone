@@ -223,7 +223,6 @@ body {
     margin: 0;
 }
 
-
 .phone_image {
     width: fit-content;
     height: 70vh;
@@ -284,6 +283,23 @@ body {
 
 .small-show {
     display: none;
+}
+
+.btn-like {
+    border: none;
+    background: none;
+}
+
+.wishlist_left {
+    float: left;
+}
+
+.wishlist_right {
+    float: right;
+}
+
+.heart {
+    color: #e8a79d9c;
 }
 /*...................................Bag */
 .table-image-width {

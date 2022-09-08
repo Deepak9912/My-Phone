@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, Category
+from .models import Product, Category, Review
+from .forms import ProductForm, ReviewForm
 
 # Create your views here.
 def all_products(request):
@@ -63,10 +64,43 @@ def product_detail(request, product_id):
     """
     A view with product details
     """
+    products = Product.objects.all()
     product = get_object_or_404(Product, pk=product_id)
+
+    liked = False
+    if product.likes.filter(id=request.user.id).exists():
+        liked = True
     
+    if request.method == 'POST':
+
+        review_form = ReviewForm(data=request.POST or None)
+
+        if request.user.is_authenticated and review_form.is_valid():
+
+            review_form.instance.user = request.user
+            review = review_form.save(commit=False)
+            review.product = product
+            review.save()
+            messages.success(request, ('Thank you for your review!'))
+
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(
+                request,
+                'Please login to create a review on one of our products!')
+            return redirect(reverse('product_detail', args={product.id}))
+    else:
+        review_form = ReviewForm()
+
+    reviews = Review.objects.filter(product=product)
+
+
     context = {
         'product': product,
+        'products': products,
+        'liked': liked,
+        'reviews': reviews,
+        'review_form': review_form,
     }
 
     return render(request, 'products/product_detail.html', context)
