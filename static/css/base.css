@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    height: calc(100vh - 100px);
+    height: 100%;
     color: #000;
 }
 
@@ -14,31 +14,40 @@ body {
 
 
 /*.................................navigation bar and header */
-.navbar-light {
-    background-color: #E6E8E6 !important;
+
+.topnav {
+    margin-top: 1px;
 }
 
-.header-container {
-    padding-top: 100px;
+.main-logo-link {
+    width: fit-content;
 }
 
-.shop-btn {
-    background: black;
-    color: #fafafa;
-    min-width: 240px;
+.topnav.topnav-active {
+    margin-top: -8px;
 }
 
-.shop-btn:hover,
-.shop-btn:active,
-.shop-btn:focus {
-    background: #222;
-    color: #fafafa;
+.navbar-light .navbar-nav .nav-link {
+    padding: 15px 10px;
 }
+
+
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #000;
+    color: #fafafa !important;
+}
+
 
 /*.................................home page */
 .home-btn {
     background-color: #000;
     border: solid 2px #fafafa;
+}
+
+.btn-black {
+    background: black;
+    color: white;
 }
 
 .home-btn a {
@@ -266,7 +275,6 @@ body {
 .small-show {
     display: none;
 }
-
 /*...................................Bag */
 .table-image-width {
     width: 10%;
@@ -309,11 +317,19 @@ body {
 /*...................................Media Queries */
 @media (max-width: 991px) {
     body {
-        height: calc(100vh - 100px);
+        height: calc(100vh - 116px);
     }
-
+    
     #jumbotron {
         margin-top: 0 !important;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
     }
 }
 
@@ -337,7 +353,7 @@ body {
 
 @media (max-width: 550px) {
     body {
-        height: calc(100vh - 200px);
+        height: calc(100vh - 116px);
     }
 
     #intro-container {
