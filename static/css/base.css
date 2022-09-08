@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    height: 100%;
+    height: calc(100vh - 164px);
     color: #000;
 }
 
@@ -40,6 +40,14 @@ body {
 
 
 /*.................................home page */
+.header-container{
+    padding-top: 1rem;
+}
+
+#intro-container {
+    margin-top: 6rem;
+}
+
 .home-btn {
     background-color: #000;
     border: solid 2px #fafafa;
@@ -148,8 +156,8 @@ body {
 }
 
 /*.....................................products page */
-.header-container {
-    padding-top: 300px;
+.product-container-body{
+    padding-top: 8rem;
 }
 
 .overlay {
@@ -210,13 +218,15 @@ body {
 /* -------------------------------- products details page */
 .image_container{
     width: 100%;
+    height: 100%;
     text-align: center;
     margin: 0;
 }
 
+
 .phone_image {
-    width: 300px;
-    height: 400px;
+    width: fit-content;
+    height: 70vh;
     object-fit: cover;
     border: solid 2px white;
 }
@@ -319,7 +329,10 @@ body {
     body {
         height: calc(100vh - 116px);
     }
-    
+    .header-container {
+        padding-top: 82px;
+    }
+
     #jumbotron {
         margin-top: 0 !important;
     }
@@ -336,6 +349,11 @@ body {
 @media (max-width: 860px) {}
 
 @media (max-width: 770px) {
+
+    .header-container {
+        padding-top: 120px;
+    }
+
     .small-search-show {
         display: block;
         float: right;
@@ -356,6 +374,10 @@ body {
         height: calc(100vh - 116px);
     }
 
+    .header-container {
+        padding-top: 120px;
+    }
+
     #intro-container {
         margin-top: 6rem;
     }
@@ -365,4 +387,8 @@ body {
     }
 }
 
-@media (max-width: 400px) {}
+@media (max-width: 400px) {
+    .header-container {
+        padding-top: 120px;
+    }
+}
