@@ -64,8 +64,8 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <a class="update-link text-info"><i class="fa-solid fa-arrows-rotate"></i></a>
-                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><i class="fa-solid fa-trash-can"></i></a>
+                                    <a class="update-link text-info"><i class="fa-solid fa-arrows-rotate"><small>update</small></i></a>
+                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><i class="fa-solid fa-trash-can"><small>remove</small></i></a>
                                 </td>
                                 <td>
                                     <p>€{{ item.product.price }}</p>
@@ -109,3 +109,28 @@
 </div>
 {% endblock %}
 
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
+
+<script>
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    });
+
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    });
+</script>
+{% endblock %}
