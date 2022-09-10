@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block extra_title %} | Shopping Bag {% endblock %}
 
@@ -36,7 +37,7 @@
                                     </a>
                                 </td>
                                 <td class="pl-0 pr-0">
-                                    <form class="update-form" method="POST" action="#">
+                                    <form class="update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                         {% csrf_token %}
                                         <div class="form-group text-center">
                                             <label for="id_qty_{{ item.item_id }}">Amount:</label>
@@ -64,11 +65,11 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <a class="update-link text-info"><i class="fa-solid fa-arrows-rotate"><small>update</small></i></a>
-                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><i class="fa-solid fa-trash-can"><small>remove</small></i></a>
+                                    <a class="update-link text-info"><i class="fa-solid fa-arrows-rotate"></i></a>
+                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><i class="fa-solid fa-trash-can"></i></a>
                                 </td>
                                 <td>
-                                    <p>€{{ item.product.price }}</p>
+                                    <p>€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                 </td>
                             </tr>
                         {% endfor %}
