@@ -146,6 +146,28 @@ body {
     font-size: 20px;
 }
 
+/*......................................Message container error messages */
+.message-container {
+    position: fixed;
+    top: 75px;
+    right: 10px;
+    z-index: 99999999999999;
+}
+
+.toast-btn {
+    background-color: #1c3a42;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /*................................. used from bulma */
 .icon {
     align-items: center;
@@ -173,7 +195,7 @@ body {
 .shop-btn {
     background-color: #1c3a42;
     border: solid 2px white;
-    width: 100%;
+    width: fit-content;
     border-radius: 5px;
     text-decoration: none;
 }
@@ -319,6 +341,12 @@ body {
 .qty_input {
     width: 50px;
     text-align: center;
+}
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+    color: #010901;
 }
 
 
