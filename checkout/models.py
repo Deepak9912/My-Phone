@@ -7,7 +7,7 @@ from django.conf import settings
 from products.models import Product
 
 
- 
+
 class Order(models.Model):
     """
     it creates users order form

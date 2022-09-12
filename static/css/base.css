@@ -155,7 +155,7 @@ body {
 }
 
 .toast-btn {
-    background-color: #1c3a42;
+    background-color: #000;
     height: 40px;
     border-radius: 5px;
 }
@@ -210,11 +210,12 @@ body {
 }
 
 .shop-btn {
-    background-color: #1c3a42;
+    background-color: #000;
     border: solid 2px white;
-    width: fit-content;
     border-radius: 5px;
+    padding: 2px 5px;
     text-decoration: none;
+    text-align: center;
 }
 
 .text-black {
