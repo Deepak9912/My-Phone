@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block extra_title %} | Checkout {% endblock %}
+
+{% block content %}
+<div class="container-fluid bg-white">
+    <div class="row">
+        <div class="col-md-6 pt-2 small-search-show">
+            <h2 class="mt-2 mb-2 delivery-text-header">Order Summary:</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                {% for item in bag_items %}
+                <tr>
+                    <td style="width:25%">
+                        <a href="{% url 'product_detail' item.product.id %}">
+                            <img class="w-100 p-2" src="{{ item.product.image.url }}" alt="An image to show {{ product.name }}">
+                        </a>
+                    </td>
+                    <td style="width:25%">
+                        <p>{{ item.product.name }}</p>
+                    </td>
+                    <td style="width:25%">
+                        <p>{{ item.quantity }}</p>
+                    </td>
+                    <td style="width:25%">
+                        <p class="text-muted">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+            <div class="row text-dark">
+                <div class="col-12">
+                    <hr>
+                </div>
+                <div class="col-9 mt-2">
+                    <p>Order Total:</p>
+                    <p>Delivery:</p>
+                    <p>Grand Total:</p>
+                </div>
+                <div class="col-3 mt-2">
+                    <p>€{{ total |floatformat:2 }}</p>
+                    <p>€{{ delivery |floatformat:2 }}</p>
+                    <p><strong>€{{ grand_total |floatformat:2 }}</strong></p>
+                </div>
+                <div class="col-12">
+                    <hr>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
