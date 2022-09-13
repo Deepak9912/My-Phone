@@ -24,7 +24,7 @@
             <div class="col-8 pl-0">
                 <p>{{ item.product.name }}</p>
                 <p>Quantity: {{ item.quantity }}</p>
-                <p>£{{ item.product.price }}</p>
+                <p>€{{ item.product.price }}</p>
             </div>
         </div>
         {% endfor %}
@@ -32,21 +32,31 @@
             <div class="col">
                 <h3>Summary</h3>
                 <hr>
-                <p>Total Cost: £{{ total|floatformat:2 }}</p>
-                <p>Delivery: £{{ delivery|floatformat:2 }}</p>
+                <p>Total Cost: €{{ total|floatformat:2 }}</p>
+                <p>Delivery: €{{ delivery|floatformat:2 }}</p>
                 <hr>
-                <p><strong>Total Cost: £{{ grand_total|floatformat:2 }}</strong></p>
+                <p><strong>Total Cost: €{{ grand_total|floatformat:2 }}</strong></p>
                 {% if free_delivery_delta > 0 %}
-                    <p class="text-pink p-0">Spend £{{ free_delivery_delta }} to get FREE DELIVERY!</p>
+                    <p class="text-pink p-0">Spend €{{ free_delivery_delta }} to get FREE DELIVERY!</p>
                 {% endif %}
             </div>
         </div>
         <div class="row">
-            <div class="col-12 mt-2 toast-btn btns text-center pt-2 pb-2">
-                <a href="{% url 'checkout' %}" class="text-light w-100 mb-2 pl-0 pr-0">Checkout</a>
+            <div class="col-12 mt-2">
+                <a href="{% url 'view_bag' %}" class="btn btn-black btn-block rounded-0">
+                    <span class="text-uppercase">Go To Secure Checkout</span>
+                    <span class="icon">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </a>
             </div>
-            <div class="col-12 mt-2 toast-btn btns text-center pt-2 pb-2">
-                <a href="{% url 'products' %}" class="text-light w-100 mb-2 pl-0 pr-0">Keep Shopping</a>
+            <div class="col-12 mt-2">
+                <a href="{% url 'products' %}" class="btn btn-black btn-block rounded-0">
+                    <span class="text-uppercase">Keep Shopping</span>
+                    <span class="icon">
+                        <i class="fas fa-gifts"></i>
+                    </span>
+                </a>
             </div>
         </div>
     </div>
