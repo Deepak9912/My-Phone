@@ -363,12 +363,9 @@ body {
     cursor: pointer;
 }
 
-.review-background {
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    background-color: #1714149c;
-    float: right;
+.delete-review a{
+    columns: black;
+    text-decoration: none;
 }
 
 /*...................................Bag */

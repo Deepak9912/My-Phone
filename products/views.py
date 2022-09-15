@@ -104,3 +104,18 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+def delete_product_review(request, review_id):
+    """
+    Deletes the review from the product
+    """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can delete reviews')
+        return redirect(reverse('home'))
+
+    review = get_object_or_404(Review, pk=review_id)
+    review.delete()
+    messages.success(request, 'Review has been deleted!')
+
+    return redirect(reverse('products'))

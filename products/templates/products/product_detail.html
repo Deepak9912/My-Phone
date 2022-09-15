@@ -179,11 +179,11 @@
                             </p>
                         </div>
                         {% if request.user.is_superuser %}
-                        div class="col-2 btns pt-2">
-                            <div class="review-background">
+                        <div class="col-2 btns pt-2">
+                            <div class="delete-review">
                                 <a href="{% url 'delete_product_review' review.id %}">
-                                    <p class="text-blue text-center">
-                                        <i class="fa-solid fa-xmark"></i>
+                                    <p class="text-center">
+                                        <span class="small text-decoration-none text-dark text-bold">Delete Review</span>
                                     </p>
                                 </a>
                             </div>
