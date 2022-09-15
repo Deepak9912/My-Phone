@@ -341,6 +341,36 @@ body {
 .heart {
     color: #1309099c;
 }
+
+.background_header_reccommended {
+    background-color: #1c3a42;
+    border: white 2px solid;
+}
+
+.product-reccommended-images {
+    height: 250px;
+}
+
+.user-width {
+    height: 75px;
+}
+
+#post-product-review:hover {
+    cursor: pointer;
+}
+
+#close-review:hover {
+    cursor: pointer;
+}
+
+.review-background {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #1714149c;
+    float: right;
+}
+
 /*...................................Bag */
 .table-image-width {
     width: 10%;
@@ -447,6 +477,15 @@ body {
 
     #jumbotron h1 {
         font-size: 2rem;
+    }
+    .user-width {
+        height: 45px;
+    }
+    .small-title-review {
+        font-size: 18px;
+    }
+    .small-review {
+        font-size: 15px;
     }
 }
 
