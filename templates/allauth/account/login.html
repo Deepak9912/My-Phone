@@ -9,6 +9,8 @@
 <hr>
 <h2 class="mb-4 logo-font">{% trans "Sign In" %}</h2>
 <hr>
+
+
 {% get_providers as socialaccount_providers %}
 
 {% if socialaccount_providers %}
@@ -35,7 +37,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
 <form class="login" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %}
-  {{ form.crispy }}
+  {{ form|crispy }}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
