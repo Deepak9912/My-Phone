@@ -1,6 +1,6 @@
-'''
+"""
 Imports relevant django packages
-'''
+"""
 from django import forms
 from .widgets import CustomClearableFileInput
 from .models import Product, Category, Review
