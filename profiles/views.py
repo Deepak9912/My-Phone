@@ -3,6 +3,8 @@ from django.contrib import messages
 from .models import UserProfile
 from .forms import UserProfileForm
 
+from checkout.models import Order
+
 # Create your views here.
 def profile(request):
     """ It displays user profile"""
@@ -22,6 +24,26 @@ def profile(request):
     template = 'profiles/profile.html'
     context = {
         'form': form,
+        'orders': orders,
+        'on_profile_page': True
+    }
+
+    return render(request, template, context)
+
+
+def order_history(request, order_number):
+    """
+    Displays the users order history information
+    """
+    order = get_object_or_404(Order, order_number=order_number)
+    messages.info(request, (
+        f'This is a previous confirmation order number: {order_number}.'
+    ))
+
+    template = 'checkout/checkout_success.html'
+    context = {
+        'order': order,
+        'from_profile': True,
     }
 
     return render(request, template, context)
