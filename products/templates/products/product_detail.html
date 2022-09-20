@@ -55,14 +55,14 @@
             {% if request.user.is_superuser %}
             <div class="row">
                 <div class="col-6 btns">
-                    <a href="#">
+                    <a href="{% url 'edit_product' product.id %}">
                         <p class="text-blue edit-button text-center">
                             Edit
                         </p>
                     </a>
                 </div>
                 <div class="col-6 btns">
-                    <a href="#">
+                    <a href="{% url 'delete_product' product.id %}">
                         <p class="text-blue delete-button text-center">
                             Delete
                         </p>
