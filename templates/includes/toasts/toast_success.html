@@ -18,8 +18,13 @@
                 <hr>
             </div>
             <div class="col-4">
+                {% if item.product.image %}
                 <img class="img-thumbnail float-end" style="height: 60px; width: 50px"
                 src="{{ item.product.image.url }}" alt="{{ item.product.name }} thumbnail image">
+                {% else %}
+                <img class="img-thumbnail float-end" style="height: 60px; width: 50px"
+                src="{{ MEDIA_URL }}noimg.jpg" alt="{{ item.product.name }} thumbnail image">
+                {% endif %}
             </div>
             <div class="col-8 pl-0">
                 <p>{{ item.product.name }}</p>

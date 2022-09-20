@@ -1,24 +1,12 @@
-"""
-Imports relevant django packages
-"""
 from django import forms
-from .widgets import CustomClearableFileInput
 from .models import Product, Category, Review
 
+
 class ProductForm(forms.ModelForm):
-    '''
-    Form to display the product information
-    '''
+
     class Meta:
-        '''
-        Product fields generated within the form
-        '''
         model = Product
-        exclude = ('likes', 'image_url',)
-    
-    image = forms.ImageField(label='Image',
-                             required=True,
-                             widget=CustomClearableFileInput)
+        fields = '__all__'
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

@@ -27,9 +27,15 @@
                         {% for item in bag_items %}
                             <tr>
                                 <td class="table-image-width">
+                                    {% if item.product.image %}
                                     <a href="{% url 'product_detail' item.product.id %}">
                                         <img class="img-fluid" src="{{ item.product.image.url }}" alt="An image to show {{ item.product.name }}">
                                     </a>
+                                    {% else %}
+                                    <a href="{{ MEDIA_URL }}noimg.jpg">
+                                        <img class="img-fluid" src="{{ item.product.image.url }}" alt="An image to show {{ item.product.name }}">
+                                    </a>
+                                    {% endif %}
                                 </td>
                                 <td class="btns">
                                     <a href="{% url 'product_detail' item.product.id %}">
