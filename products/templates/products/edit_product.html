@@ -12,10 +12,10 @@
 {% block content %}
 <div class="container-fluid bg-white product-container-body mt-5">
     <div class="row">
-        <div class="col-8 mt-4 mb-2 align-item-center">
-            <h2 class="delivery-text-header">Product Management: Add a Product</h3>
+        <div class="col-12 mt-4">
+            <h2 class="delivery-text-header">Product Management: Edit a Product</h2>
             <hr>
-            <form method="POST" action="{% url 'add_product' %}" class="form mb-3" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'edit_product' product.id %}" class="form" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% for field in form %}
                     {% if field.name != 'image' %}
@@ -25,18 +25,22 @@
                     {% endif %}
                 {% endfor %}
                 <div class="row">
-                    <div class="col-6 checkout">
-                        <a href="{% url 'products' %}">
-                            <p class="text-light text-center">Cancel</p>
-                        </a>
+                    <div class="col-6">
+                        <a href="{% url 'products' %}" class="btn shop-btn text-light">Cancel</a>
                     </div>
                     <div class="col-6">
-                        <button class="bg-dark text-light" type="submit" aria-label="Add Product">
-                            Add product
+                        <button class="btn shop-btn text-light" type="submit" aria-label="Update Product">
+                            Update product
                         </button>
                     </div>
                 </div>
             </form>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 background_temp_strip">
         </div>
     </div>
 </div>

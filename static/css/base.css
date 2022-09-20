@@ -309,6 +309,11 @@ input[name='q']::placeholder{
     color: #010901;
 }
 
+/*................................Add product*/
+.delivery-text-header {
+    font-size: 25px;
+}
+
 /* -------------------------------- products details page */
 .image_container{
     width: 100%;
