@@ -314,6 +314,17 @@ input[name='q']::placeholder{
     font-size: 25px;
 }
 
+.edit-button {
+    background-color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.delete-button {
+    background-color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+}
 /* -------------------------------- products details page */
 .image_container{
     width: 100%;

@@ -82,6 +82,16 @@
                                     </a>
                                 </div>
                             </div>
+                            {% if request.user.is_superuser %}
+                                <div class="row mt-2">
+                                    <div class="col-6 btns">
+                                        <a href="{% url 'edit_product' product.id %}"><p class="edit-button text-center text-light">Edit</p></a>
+                                    </div>
+                                    <div class="col-6 btns">
+                                        <a href="{% url 'delete_product' product.id %}"><p class="delete-button text-center text-light">Delete</p></a>
+                                    </div>
+                                </div>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
