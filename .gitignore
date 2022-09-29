@@ -1,6 +1,7 @@
 core.Microsoft*
 core.mongo*
 core.python*
+core.14*
 env.py
 __pycache__/
 *.py[cod]
