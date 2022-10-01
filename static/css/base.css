@@ -183,7 +183,7 @@ input[name='q']::placeholder {
 }
 
 .link-dark {
-    color: #212529;
+    color: #fafafa;
 }
 
 .link-dark:hover,
