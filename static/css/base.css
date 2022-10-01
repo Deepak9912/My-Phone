@@ -12,21 +12,21 @@ body {
     text-transform: uppercase;
 }
 
-.allauth-form-inner-content p{
+.allauth-form-inner-content p {
     margin-top: 1.5rem;
     color: #6c757d;
 }
 
-.allauth-form-inner-content input{
+.allauth-form-inner-content input {
     border-color: #000;
     border-radius: 0;
 }
 
-.allauth-form-inner-content label:not([for='id_remember']){
+.allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
 }
 
-.allauth-form-inner-content label::placeholder{
+.allauth-form-inner-content label::placeholder {
     color: #aab7c4;
 }
 
@@ -60,6 +60,7 @@ body {
 .allauth-form-inner-content a {
     color: #17a2b8;
 }
+
 /*...........................................General styling*/
 .small-divider {
     display: none;
@@ -89,12 +90,12 @@ body {
     color: #fafafa !important;
 }
 
-input[name='q']::placeholder{
+input[name='q']::placeholder {
     color: #aab7c4;
 }
 
 /*.................................home page */
-.header-container{
+.header-container {
     padding-top: 1rem;
 }
 
@@ -171,6 +172,110 @@ input[name='q']::placeholder{
     }
 }
 
+.page-section {
+    padding: 6rem 0;
+}
+
+.page-section h2.section-heading,
+.page-section .section-heading.h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.page-section h3.section-subheading,
+.page-section .section-subheading.h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 4rem;
+}
+
+#brand .brand-item {
+    max-width: 26rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#brand .brand-item .brand-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+#brand .brand-item .brand-link .brand-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 200, 0, 0.9);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+
+#brand .brand-item .brand-link .brand-hover .brand-hover-content {
+    font-size: 1.25rem;
+    color: white;
+}
+
+#brand .brand-item .brand-link:hover .brand-hover {
+    opacity: 1;
+}
+
+#brand .brand-item .brand-caption {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+#brand .brand-item .brand-caption .brand-caption-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.brand-modal .modal-dialog {
+    margin: 1rem;
+    max-width: 100vw;
+  }
+  .brand-modal .modal-content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+  }
+  .brand-modal .modal-content h2, .brand-modal .modal-content .h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .brand-modal .modal-content p.item-intro {
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  .brand-modal .modal-content p {
+    margin-bottom: 2rem;
+  }
+  .brand-modal .modal-content ul.list-inline {
+    margin-bottom: 2rem;
+  }
+  .brand-modal .modal-content img {
+    margin-bottom: 2rem;
+  }
+  .brand-modal .close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .brand-modal .close-modal:hover {
+    opacity: 0.3;
+  }
+
 /*.................................footer */
 .footer-container {
     width: 220px;
@@ -223,10 +328,10 @@ input[name='q']::placeholder{
 }
 
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -249,7 +354,7 @@ input[name='q']::placeholder{
 }
 
 /*.....................................products page */
-.product-container-body{
+.product-container-body {
     padding-top: 8rem;
 }
 
@@ -325,8 +430,9 @@ input[name='q']::placeholder{
     border-radius: 5px;
     text-decoration: none;
 }
+
 /* -------------------------------- products details page */
-.image_container{
+.image_container {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -369,9 +475,9 @@ input[name='q']::placeholder{
     height: 250px;
 }
 
-.product-reccommended-images{
+.product-reccommended-images {
     opacity: 0.75;
-    width:  100px;
+    width: 100px;
     height: 250px;
     object-fit: cover;
     border: solid 2px white;
@@ -433,7 +539,7 @@ input[name='q']::placeholder{
     cursor: pointer;
 }
 
-.delete-review a{
+.delete-review a {
     columns: black;
     text-decoration: none;
 }
@@ -490,6 +596,7 @@ input[name='q']::placeholder{
     body {
         height: calc(100vh - 116px);
     }
+
     .header-container {
         padding-top: 82px;
     }
@@ -546,12 +653,15 @@ input[name='q']::placeholder{
     #jumbotron h1 {
         font-size: 2rem;
     }
+
     .user-width {
         height: 45px;
     }
+
     .small-title-review {
         font-size: 18px;
     }
+
     .small-review {
         font-size: 15px;
     }
