@@ -172,6 +172,38 @@ input[name='q']::placeholder {
     }
 }
 
+#mc_embed_signup {
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif;  
+    /* width:600px; */
+}
+
+.subscribe-heading {
+    max-width: 68vw;
+    text-align: right;
+}
+
+.subscribe-image {
+    background: url('/media/subscribe_380x381.jpg') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    width: 20vw;
+}
+
+@media (max-width: 529px) {
+    .subscribe-heading {
+        text-align: center !important;
+        max-width: inherit !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .subscribe-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
 /*.................................footer */
 .footer {
     text-align: center;
