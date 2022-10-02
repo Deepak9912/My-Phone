@@ -173,9 +173,10 @@ input[name='q']::placeholder {
 }
 
 #mc_embed_signup {
-    clear:left; 
-    font:14px Helvetica,Arial,sans-serif;  
-    /* width:600px; */
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    width: 600px;
 }
 
 .subscribe-heading {
@@ -186,7 +187,7 @@ input[name='q']::placeholder {
 .subscribe-image {
     background: url('/media/subscribe_380x381.jpg') no-repeat center center;
     background-size: cover;
-    height: 50vh;
+    height: 40vh;
     width: 20vw;
 }
 
