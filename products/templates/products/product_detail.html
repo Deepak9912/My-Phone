@@ -2,23 +2,18 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
 {% endblock %}
 
-{% block extra_title %} | Product Information {% endblock %}
-
 {% block content %}
+<div class="overlay"></div>
 <div class="container-fluid bg-white product-container-body mt-2">
     <div class="row mt-5">
         <div class="col-sm-12 col-md-6 mt-4">
             {% if product.image %}
-            <div class="col image_container mb-4 btns">
-                <a href="{{ product.image.url }}" target="_blank">
-                    <img class="phone_image" src="{{ product.image.url }}" alt="An image to show {{ product.name }}">
+            <div class="col phone_img_card_container">
+                <a href="{% url 'product_detail' product.id %}">
+                    <img src="{{ product.image.url }}" alt="An image to show {{ product.name }}"
+                        height="300" width="250">
                 </a>
             </div>
             {% else %}
