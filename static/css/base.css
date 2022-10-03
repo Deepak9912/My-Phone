@@ -66,6 +66,10 @@ body {
     display: none;
 }
 
+.logout {
+    height: 32vh;
+}
+
 
 /*.................................navigation bar and header */
 
