@@ -523,6 +523,31 @@ footer a {
     text-decoration: none;
 }
 
+/*...................................Wishlist */
+.phone_img_card_container{
+    height: 200px;
+    text-align: center;
+    margin: 0;
+}
+
+.phone_image_cards{
+    width:  200px;
+    height: 100%;
+    object-fit: cover;
+    border: solid 2px white;
+}
+
+.shop-btn {
+    background-color: #080808;
+    border: solid 2px white;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.no-items {
+    height: 250px;
+}
 
 /*...................................Bag */
 .table-image-width {
