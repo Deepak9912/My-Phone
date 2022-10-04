@@ -464,6 +464,10 @@ footer a {
     display: none;
 }
 
+.btns a{
+    text-decoration: none;
+}
+
 .btn-like {
     border: none;
     background: none;
@@ -482,7 +486,7 @@ footer a {
 }
 
 .background_header_reccommended {
-    background-color: #1c3a42;
+    background-color: #000;
     border: white 2px solid;
 }
 
@@ -496,6 +500,18 @@ footer a {
 
 #post-product-review:hover {
     cursor: pointer;
+}
+
+.red-background {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #1b1a1a9c;
+    float: right;
+}
+
+#product-review {
+    display: none;
 }
 
 #close-review:hover {

@@ -42,4 +42,18 @@
        handleEnableDisable(itemId);
     });
 
+    // Product Review
+    const productReview = document.getElementById('post-product-review');
+
+    productReview.addEventListener("click", function() {
+        let reviewForm = document.getElementById("product-review");
+        let close = document.getElementById("close-review");
+
+        reviewForm.style.display = "block";
+
+        close.addEventListener("click", function(){
+        reviewForm.style.display = "none";
+        });
+    });
+
 </script>
