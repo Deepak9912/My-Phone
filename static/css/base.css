@@ -482,7 +482,12 @@ footer a {
 }
 
 .heart {
-    color: #1309099c;
+    color: #f80909eb;
+}
+
+.btn-like {
+    border: none;
+    background: none;
 }
 
 .product-reccommended-images {
