@@ -437,6 +437,15 @@ footer a {
     border: solid 2px white;
 }
 
+.product-reccommended-images a{
+ text-decoration: none;
+ color: #212529;
+}
+
+.similar-product{
+    margin-bottom: 10%;
+}
+
 .phone-name-main {
     position: absolute;
     bottom: 20px;
