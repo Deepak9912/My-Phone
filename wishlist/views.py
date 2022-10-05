@@ -12,9 +12,9 @@ def view_wishlist(request):
 
 
 def add_to_wishlist(request, item_id):
-    '''
+    """
     Add an item to the wishlist
-    '''
+    """
     product = get_object_or_404(Product, pk=item_id)
     redirect_url = request.POST.get('redirect_url')
     wishlist = request.session.get('wishlist', {})
