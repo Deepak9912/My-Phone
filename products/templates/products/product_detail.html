@@ -6,14 +6,15 @@
 
 {% block content %}
 <div class="overlay"></div>
-<div class="container-fluid bg-white product-container-body mt-2">
+<div class="container">
+<div class="bg-white product-container-body mt-2">
     <div class="row mt-5">
         <div class="col-sm-12 col-md-6 mt-4">
             {% if product.image %}
             <div class="col phone_img_card_container">
                 <a href="{% url 'product_detail' product.id %}">
                     <img src="{{ product.image.url }}" alt="An image to show {{ product.name }}"
-                        height="300" width="250">
+                    height="auto" width="auto">
                 </a>
             </div>
             {% else %}
@@ -244,6 +245,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 <hr>
 {% endblock %}
