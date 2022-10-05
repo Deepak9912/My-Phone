@@ -70,7 +70,26 @@ body {
     height: 32vh;
 }
 
+.form-control {
+    width: 80%;
+}
 
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 50%;
+}
+
+@media (max-width: 550px){
+.header-container {
+    padding-top: 0px;
+}
+.product-container-body {
+    padding-top: 2rem;
+}
+}
 /*.................................navigation bar and header */
 
 .topnav {
