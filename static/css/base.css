@@ -219,6 +219,10 @@ input[name='q']::placeholder {
         text-align: center !important;
         max-width: inherit !important;
     }
+    .subscribe-image {
+        height: 40vh;
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
