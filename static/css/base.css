@@ -232,6 +232,31 @@ input[name='q']::placeholder {
     }
 }
 
+
+.main-banner {
+    background: url('/media/about.jpg') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    margin-top: 50px;
+}
+
+@media (max-width: 975px) {
+    .main-banner {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-banner {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 550px) {
+    .main-banner {
+        height: 20vh;
+    }
+}
 /*.................................footer */
 .footer {
     text-align: center;
@@ -363,15 +388,16 @@ footer a {
 }
 
 .btn-outline-warning {
-    color: #010901 !important;
     border: 1px solid black;
+    background: #000;
+    color: white !important;
 }
 
 .btn-outline-warning:hover,
 .btn-outline-warning:active,
 .btn-outline-warning:focus {
-    color: #010901 !important;
-    background-color: #fafafa !important;
+    background: #636161 !important;
+    color: black !important ;
     border: 1px solid black;
 }
 
@@ -391,6 +417,41 @@ footer a {
     color: #010901;
 }
 
+.about-us-heading {
+    max-width: 42vw;
+    text-align: center;
+}
+
+.about-us-image {
+    background: url('/media/about-section.jpg') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    width: 20vw;
+}
+
+@media (max-width: 1300px) {
+    #about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .about-us-col {
+        flex: 0 0 66%;
+        max-width: 66%;
+    }
+    .about-us-image {
+        width: auto !important;
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .about-us-col {
+        flex: 0 0 99%;
+        max-width: 99%;
+    }
+}
 /*................................Add product*/
 .delivery-text-header {
     font-size: 25px;
