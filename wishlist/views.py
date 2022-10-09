@@ -46,6 +46,7 @@ def add_to_wishlist(request, item_id):
         return redirect(redirect_url)
 
 
+
 def remove_from_wishlist(request, item_id):
     """
     Removes the item from the users wishlist

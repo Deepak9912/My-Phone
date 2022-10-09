@@ -477,6 +477,18 @@ footer a {
     margin: 0;
 }
 
+.product-image{
+    height: auto;
+    width: auto;
+}
+
+@media (max-width: 800px){
+.product-image {
+    height: 100%;
+    width: auto;
+}
+}
+
 .phone_image {
     width: fit-content;
     height: 70vh;
@@ -630,7 +642,13 @@ footer a {
 }
 
 .no-items {
-    height: 250px;
+    height: 400px;
+}
+
+@media (max-width: 800px){
+.no-items {
+    height: 450px;
+}
 }
 
 /*...................................Bag */
