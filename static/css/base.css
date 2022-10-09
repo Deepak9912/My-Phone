@@ -195,7 +195,7 @@ input[name='q']::placeholder {
     }
 }
 
-#mc_embed_signup {
+.mc_embed_signup {
     background: #fff;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
@@ -615,7 +615,7 @@ footer a {
 }
 
 .delete-review a {
-    columns: black;
+    color: black;
     text-decoration: none;
 }
 
