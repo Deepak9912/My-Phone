@@ -697,6 +697,19 @@ footer a {
     float: right;
 }
 
+.phone_image_cards_container{
+    height: 200px;
+    text-align: center;
+    margin: 0;
+}
+
+.phone_image_cards {
+    width:  200px;
+    height: 100%;
+    object-fit: cover;
+    border: solid 2px white;
+}
+
 /*...................................Media Queries */
 @media (max-width: 991px) {
     body {
