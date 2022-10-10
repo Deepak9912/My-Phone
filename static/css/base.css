@@ -117,6 +117,9 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+.custom-style{
+    margin-bottom: auto;
+}
 /*.................................home page */
 .header-container {
     padding-top: 1rem;
