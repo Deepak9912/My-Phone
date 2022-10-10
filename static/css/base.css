@@ -260,6 +260,17 @@ input[name='q']::placeholder {
         height: 20vh;
     }
 }
+
+.custom{
+    margin-bottom: 10rem;
+}
+
+
+@media (max-width: 550px) {
+    .custom {
+        margin-bottom: 8rem;
+    }
+}
 /*.................................footer */
 .footer {
     text-align: center;
@@ -421,7 +432,7 @@ footer a {
 }
 
 .about-us-heading {
-    max-width: 42vw;
+    max-width: 40vw;
     text-align: center;
 }
 
