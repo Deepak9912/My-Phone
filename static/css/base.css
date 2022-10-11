@@ -271,6 +271,10 @@ input[name='q']::placeholder {
         margin-bottom: 8rem;
     }
 }
+
+.hidden{
+    visibility: hidden;
+}
 /*.................................footer */
 .footer {
     text-align: center;
