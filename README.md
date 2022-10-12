@@ -13,54 +13,59 @@ This website application includes CRUD functionality, user authentication (using
 
 ## Table of Contents:
 _______
-- ``User Stories``
-- ``Agile Planning Environment``
-- `Exiting features`
-  -	`All Pages`
-  -	`Home Page`
-  -	`Products`
-  -	`Products Details`
-  -	`Add to bag notification`
-  -	`Bag Page`
-  -	`Checkout`
-  -	`Order Confirmation Page`
-  -	`User Profile`
-  -	`Wishlist`
-  -	`Admin`
-- `Future feature`
-- `Database schema`
-- `Marketing` 
-  -	`Search Engine Optimization`
-  -	`Web Marketing`
-  -	`Google Metrics`
-  -	`Business Model`
-  -	`Social Media Platforms`
-  -	`Email Subscription Service`
-  -	`Confirmation Email`
-- `Color Scheme`
-- `Typography`
-- `Favicon`
-- `Wireframes`
-  - `Desktop wireframe`
-  - `Mobile wireframe`
-- `Technologies used`
-- `Testing`
-  - `Manual and automated testing`
-  -	`Python testing`
-  -	`Manual User Story Testing`
-  -	`Fixed Bugs and Errors`
-- `Deployment`
-  -	`Github`
-  -	`Django and Heroku`
-  -	`Allauth`
-- `Forking`
-- `Cloning`
-- `AWS Setup`
-- `Stripe Payments`
-- `Credits`
+- User Stories
+- Agile Planning Environment
+- Exiting features
+  -	All Pages
+    - Navigation
+    - Footer
+  -	Home Page
+  -	Products`
+  -	Products Details
+  -	Add to bag notification
+  -	Bag Page
+  -	Checkout
+  -	Order Confirmation Page
+  -	User Profile
+  -	Wishlist
+  -	Admin
+    - Add Product
+    - Edit Product
+    - Delete Product
+- Future feature
+- Database schema
+- Marketing
+  -	Search Engine Optimization
+  -	Web Marketing
+  -	Google Metrics
+  -	Business Model
+  -	Social Media Platform
+  -	Email Subscription Service
+  -	Confirmation Email
+- Color Scheme
+- Typography
+- Favicon
+- Wireframes
+  - Desktop wireframe
+  - Mobile wireframe
+- Technologies used
+- Testing
+  - Manual and automated testing
+  -	Python testing
+  -	Manual User Story Testing
+  -	Fixed Bugs and Errors
+- Deployment
+  -	Github
+  -	Django and Heroku
+  -	Allauth
+- Forking
+- Cloning
+- AWS Setup
+- Stripe Payments
+- Credits
 
 
-## `User Stories`
+## User Stories
 ___
 #### EPIC: Viewing and Navigation (Products)
 
@@ -76,67 +81,184 @@ ___
 
 #### EPIC: Wishlist Functionality
 
-## `Agile Planning Environment`
+## Agile Planning Environment
 ___
 The story point allocation above is based upon a 100-point iteration and uses the Fibonacci Sequence. Using the MoSCoW method each user story was then been labelled as being either 'Must Have', 'Should Have', 'Could Have' or 'Wont Have', based upon its importance to the project whilst following the 60:20:20 MoSCoW format. Note that the 'Wont Have' User Story below was excluded from the 60:20:20 MoSCoW allocation.
 
-PIC
+pic
 
-## `Exiting features`
+## Exiting features
 __________
 
-### `All Pages`
+### All Pages
 
-### `Home Page`
+  #### Navigation
 
-### `Products`
+  The main navigation bar is located at the top of the webpage and has different functionalities. It contains the main company title to the left, a product search bar in the center and the Wishlist, bag & user profile icons to the right. When clicked on, the user profile icon branches into more links. These include authentication links (register, login & logout), my profile, my Wishlist and product management (if admin is logged in). Below the product search bar, there are individual navigation links that allow the user to browse through the products via different filters. On smaller viewports, a hamburger menu is present to keep the look of the navbar refined and clean.
 
-### `Product Details`
+  #### Footer
 
-### `Add to bag Information`
+  The footer of the page provides users with informational resources with copyright of the website on the left-hand side, and social media icons in the middle and contact details on the right-hand side of the footer.
 
-### `Bag Page`
+### Home Page
 
-### `Checkout`
+The main image on the site was carefully selected, with the aim to entice customers to explore the site further, thus improving the sites google metrics. The bold and contrasting colors within this image were then selected using Chrome DevTools and applied within the rest of the site.
+The Home Page of the website is segregated into different sections. This includes a CTA (Call to Action) that allows the users to easily access the list of phone products to browse through. A main banner of a product that represents the company and its market which is present to be appealing to user. About section- it introduces users to the website. Finally, a MailChimp powered email newsletter form that allows users to input their email address to subscribe to My Phone, followed by footer.
 
-### `Order Confirmation page`
 
-### `User Profile`
+### Products
 
-### `Wishlist`
+The products list page displays the summary of each product in a card container, an image, product name, category, price and rating. Each product card can be clicked on to view the product in detail on another page. Products can also be filtered via different categories; by rating and by price (ascending & descending).
 
-### `Admin`
+### Product Details
 
-## `Futute Feature`
+The product detail page displays full information of the product including product title, price, category, rating, and product information. Users can add the product to their Wishlist and add the specified quantity of the product to their basket for checkout. Registered users can leave a review below products to share their opinions with other users.
+Users will also see similar products options.
+
+
+### Add to bag Information
+
+One of the main features of My Phone is that distinguishes it as an e-commerce store is the add to basket feature. Users can add a specified quantity of products to their basket for purchase. A success message is displayed on the screen when products are added.
+
+### Bag Page
+
+Once the user is happy with their selection, they can advance to the shopping basket page to confirm the product selections, quantity and prices. Users can also add or remove products whilst on this page to update the quantity before checkout.
+
+### Checkout
+
+When the user is ready to proceed to the checkout page after selecting their choice of products. Here, the user is required to fill out personal information; First name, surname, email address, phone number, street address, town/city, county, postal code, and country. The user is also required to fill out payment information which in this project is powered by Stripe, long card number. expiry date and CVC. As Stripe is not fully activated in this project, only test payment details can be used to process payments. Users also have the option to save their personal information to their profile so future checkouts are easier instead of having to fill out the form repeatedly. Finally, before proceeding with the payment, the order summary is displayed next to the order form so that it is clear to the user the selection of products they are ordering.
+
+### Order Confirmation page
+
+After users have placed their order, an order confirmation page is displayed with the summary of the order placed including product details, personal information, order number and the email that is used to send the order confirmation to.
+
+### User Profile
+
+Registered users have an option to view their profile that lists their saved personal information which can be used for future checkouts and also a history of the orders they have placed with their respective order numbers. These order numbers can be hovered over and clicked on so that users can view the full order details.
+
+### Wishlist
+
+Registered users have an option to view their Wishlist and the products that have been added to it. The Wishlist feature is convenient as it does not expire, even after the user signs out. So, if the user wants to wait a longer period to purchase a product, they can keep it stored in their Wishlist. Users also have an option to remove any product from their Wishlist if no longer required.
+
+### Admin
+
+The products feature of the site all follow CRUD functionality allowing the admin user to create, read, update, and delete products and cocktails on the site. This functionality can all be done through the front end of the site, providing updated messages at each stage.
+
+  #### Add Product
+
+  Admins can add products on the site using the site admin button at the top of the page. Upon clicking this admin users are given a form containing vital product information as seen below.
+
+  #### Edit Product
+
+  Admin can edit products using the buttons on the product page and product detail pages. The form shown to admin already contains current information saving time when making alterations.
+
+  #### Delete Product
+
+  Admin can click on delete button to delete a product.
+
+## Futute Feature
 ______
 
-## `Database Schema`
+The following features would help improve the site further, given more time I would have liked to have included these elements in my current project:
+
+-	The ability to recover a user's password if it has been stolen/forgotten/corrupted. This functionality is part of the allauth library which has already been installed in this project but only needs to be setup to make this functional
+-	The ability for a user to login their account via social media sign in.
+-	The functionality to add a product to the basket straight from a user's Wishlist.
+
+## Database Schema
 _______
 
-## `Marketing`
+Entity Relationship Databases (ERD) were created to help develop this project. 
+
+pic
+
+## Marketing
 ______
 
-### `Search Engine Optimization`
+The site was optimized by careful selection of keywords. The following steps were taken to do this:
 
-###	`Web Marketing`
+1.	The entire table consists of important relevant topics based upon my initial understanding of the business.
+2.	Using these topics, a 'brain dump' of keywords was made orientated around common topics and themes within the business.
+3.	Topics and keywords were then tried out on Google and the relevant suggestions it gave were added to the keyword list.
+4.	Words crossed out in red were removed due to too having too much competition using **Wordtracker**.
+5.	Words crossed out in blue were removed due to the lack of relevance and not being specific to the site.
 
-### `Google Metrics`
+    Words in Yellow denote the sites "Short Tail Keywords"
+    Words in Green denote the sites Long Tail Keywords"
 
-### `Business Model`
+An example of how these words were used throughout the site can be seen below in the screenshot found on the website’s homepage:
 
-### `Social Media Platforms`
+PIC
 
-### `Email Subscription Service`
+### Search Engine Optimization
 
-### `Confirmation Email`
+-	Words/phrases included within semantic HTML elements were optimized using the keywords above.
+-	Careful consideration was given to the words chosen to avoid 'keyword stuffing'.
+-	Keywords were used within links, urls and aria labels.
+-	Social network links include rel="noopener" to not affect the assessment of the webpage.
+-	Image description alt tags contain the keywords chosen above.
+-	External reliable links were included within the site to improve SEO, these include:
+    1.	Charities that the company supports.
+    2.	Recommended mixer brands.
+    3.	Useful tips/advice on drinking sensibly.
 
-## `Color Scheme`
+### Google Metrics
+
+Google metrics were considered when developing the site, including:
+
+Click Through Rate (CTR)
+-	The title and Meta data of the website were optimized with both short and long tailed keywords.
+Bounce Rate
+-	The homepage of the site has been made engaging for the user.
+Dwell Time
+-	Content on the homepage is interesting and engaging to users.
+Session Time
+-	It is made easy for users to discover more content through 'recommended items" sections on the page.
+Pages Per Session
+-	Links were regularly included throughout the website to encourage users to navigate through the website more and engage with more of the content.
+
+
+### Business Model
+
+The business model used for the My Phone would be a B2C (Business to Customer), this is due to the business selling products directly to the customer through the platform. The target market for these products are users:
+-	Looking to buy phone online
+
+Customers who are buying products from My Phone should be able to:
+- Easily view and purchase products
+- Easily navigate and search for products they wish to buy
+- Be able to subscribe for emails for new offers
+
+
+### Social Media Platforms
+
+As part of the Code Institute assessment criteria, a Facebook page was created to promote the company. Facebook is used by many around the globe and is a key marketing strategy to be successful e-commerce business. The Facebook page includes a CTA button which drives traffic away from social media and to the website. A screenshot of the Facebook webpage is shown below:
+
+pic
+
+### Email Subscription Service
+
+Users are encouraged to signup for newsletters, discounts and information about the products sold at My Phone. The email subscription service is ran through Mailchimp, allowing shop owners to send marketing emails through the platform, increasing engagement within the site. Below is a screenshot of one of the subscription emails that was sent by My Phone's shop owner:
+
+Pic
+
+### Confirmation Email
+
+When customers sucessfully purchase a product they are sent an automatic email containing all of their order confirmation details. An image of what this confirmation email looks like can be seen below:
+
+pic
+
+## Color Scheme
 ______
 
-## `Typography`
+The colors within the site were carefully selected to mirror the product sold online at MyPhone. The dark contrasts against the white making elements of importance stand out on the page. These colors were initially selected from the sites main banner image using DEV tools, allowing for all colors within the page to complement each other nicely.
+
+
+## Typography
 _____
 
-## ``Favicon``
+The aim of the font was to create a sophisticated feel within the site, complementing the imagery seen throughout. Moreover, text colours were either dark black or white depending on the background contrast ratio, to ensure information was accessible to users who may be visually impaired. The main font used on the site was 'Mali' and this was selected using Google Fonts
+
+## Favicon
 ______
 
 ## ``Wireframes``
