@@ -1,19 +1,172 @@
 # My-Phone
+________
 My-Phone is a full-stack Django website built using Python, JavaScript, HTML and CSS. This web application is a full B2C e-commerce website for a fictional online mobile phone website. 
 
 ## Aim
+________
 My-Phone specialises in selling and delivering the latest technology phones at the best price in market. The site provides users with different functionalities that eases the process of purchasing a product. Users of the site can browse all products, filter products by different categories and also search for specific products by keyword search. From the list of products, users can select them to display each product in detail, giving users the option to add the product to their basket or return to the product list page to browse other phones. Registered users can add the product to their wishlist or a leave a review for other users to view. Authenticated users can also checkout securely inputting their personal & payment details to purchase the product and also store these details on their profile for easier future purchases. On the other hand, this website also provides the store owner with functionalities such as product management (add, edit & delete products) without accessing the admin interface and blog post management (add, edit & delete blogs).
 
 This website application includes CRUD functionality, user authentication (using Django's allauth library), email validation and database interaction.
 
-### Deployment
+[My-Phone live link](https://my-phone2234.herokuapp.com/)
 
-#### GitHub
+
+## Table of Contents:
+_______
+- User Stories
+- Agile Planning Environment
+- Exiting features
+  -	All Pages
+  -	Home Page
+  -	Products
+  -	Products Details
+  -	Add to bag notification
+  -	Bag Page
+  -	Checkout
+  -	Order Confirmation Page
+  -	User Profile
+  -	Wishlist
+  -	Admin
+- Future feature
+- Database schema
+- Marketing 
+  -	Search Engine Optimization
+  -	Web Marketing
+  -	Google Metrics
+  -	Business Model
+  -	Social Media Platforms
+  -	Email Subscription Service
+  -	Confirmation Email
+- Color Scheme
+- Typography
+- Favicon
+- Wireframes
+  - Desktop wireframe
+  - Mobile wireframe
+- Technologies used
+- Testing
+  - Manual and automated testing
+  -	Python testing
+  -	Manual User Story Testing
+  -	Fixed Bugs and Errors
+- Deployment
+  -	Github
+  -	Django and Heroku
+  -	Allauth
+- Forking
+- Cloning
+- AWS Setup
+- Stripe Payments
+- Credits
+
+
+## User Stories
+___
+#### EPIC: Viewing and Navigation (Products)
+
+#### EPIC: Registration and Verification
+
+#### EPIC: Sorting and Searching
+
+#### EPIC: Purchasing and Checkout
+
+#### EPIC: Admin and Store Management
+
+#### EPIC: Product and Cocktail Reviews
+
+#### EPIC: Wishlist Functionality
+
+## Agile Planning Environment
+___
+The story point allocation above is based upon a 100-point iteration and uses the Fibonacci Sequence. Using the MoSCoW method each user story was then been labelled as being either 'Must Have', 'Should Have', 'Could Have' or 'Wont Have', based upon its importance to the project whilst following the 60:20:20 MoSCoW format. Note that the 'Wont Have' User Story below was excluded from the 60:20:20 MoSCoW allocation.
+
+PIC
+
+## Exiting features
+__________
+
+### All Pages
+
+### Home Page
+
+### Products
+
+### Product Details
+
+### Add to bag Information
+
+### Bag Page
+
+### Checkout
+
+### Order Confirmation page
+
+### User Profile
+
+### Wishlist
+
+### Admin
+
+## Futute Feature
+______
+
+## Database Schema
+_______
+
+## Marketing
+______
+
+### Search Engine Optimization
+
+###	Web Marketing
+
+### Google Metrics
+
+### Business Model
+
+### Social Media Platforms
+
+### Email Subscription Service
+
+### Confirmation Email
+
+## Color Scheme
+______
+
+## Typography
+_____
+
+## Favicon
+______
+
+## Wireframes
+______
+### Desktop Wireframes
+
+### Mobile Wireframes
+
+## Technologies used
+_______
+
+## Testing
+______
+###	Manual and automated testing
+
+### Python Testing
+
+### Manual User Story Testing
+
+### Fixed Bugs and Errors
+
+## Deployment
+_________
+
+### GitHub
 * Created a new GitHub repository page using the 'Code Institute Template'.
 * Opened the new repository by clicking on the 'Gitpod' button.
 * Installed the relevant apps and packages needed to deploy to HEROKU.
 
-#### Django and Heroku
+### Django and Heroku
 Deployment of my project was scaffolded using the Code Institute's Django Blog Cheatsheet. Furthermore, the following steps were taken to deploy the project to Heroku from the GitHub repository:
 
 1. Create the Heroku App:
@@ -52,19 +205,21 @@ Before creating the Heroku app make sure your project has the following files:
 - Run the following command in the terminal window: heroku git:remote -a your_app_name_here. By doing this you will link the app to your GidPod terminal.
 - After linking the app you can deploy new versions to Heroku by running the command git push heroku main.
 
-#### Allauth
+### Allauth
 
 Within the Django Framework, Allauth a package that handles registration and login details was installed. More information on how this was installed can be found here: [Django Allauth Installation](https://django-allauth.readthedocs.io/en/latest/installation.html)
 
 
-### Forking the Repository
+## Forking the Repository
+________
 
 * Log in to GitHub and locate the required GitHub repository.
 * At the top of the Repository, above the "Settings" button, locate the button labelled "Fork".
 * You should now have a copy of the original repository within your GitHub account.
 * You can make changes to this new version whilst keeping the original version safe.
 
-### Cloning the Repository
+## Cloning
+________
 
 * Ensure that you are logged into GitHub and locate the required GitHub repository.
 * Click the dropdown button labelled 'Code' above the file list.
@@ -76,7 +231,8 @@ Within the Django Framework, Allauth a package that handles registration and log
 * For more information on how to clone a repository read GitHub's [Cloning a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) document.
 
 
-### AWS S3 Bucket Set Up
+## AWS Set Up
+_______
 
 The deployed site uses AWS S3 Buckets to store the webpages static and media files. More information on how you can set up an AWS S3 Bucket can be found below:
 
@@ -192,10 +348,12 @@ AWS_S3_OBJECT_PARAMETERS = {
 12. Under Permissions select the option Grant public-read access and click Upload.
 
 
-### Stripe Payments
+## Stripe Payments
+______
 
 To handle payments within the website ensure that you have set this up a guide on how this can be done can be found [here](https://stripe.com/docs/payments/accept-a-payment#web-collect-card-details).
 
 
-### Credits
+## Credits
+______
 ..
