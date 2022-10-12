@@ -13,54 +13,54 @@ This website application includes CRUD functionality, user authentication (using
 
 ## Table of Contents:
 _______
-- User Stories
-- Agile Planning Environment
-- Exiting features
-  -	All Pages
-  -	Home Page
-  -	Products
-  -	Products Details
-  -	Add to bag notification
-  -	Bag Page
-  -	Checkout
-  -	Order Confirmation Page
-  -	User Profile
-  -	Wishlist
-  -	Admin
-- Future feature
-- Database schema
-- Marketing 
-  -	Search Engine Optimization
-  -	Web Marketing
-  -	Google Metrics
-  -	Business Model
-  -	Social Media Platforms
-  -	Email Subscription Service
-  -	Confirmation Email
-- Color Scheme
-- Typography
-- Favicon
-- Wireframes
-  - Desktop wireframe
-  - Mobile wireframe
-- Technologies used
-- Testing
-  - Manual and automated testing
-  -	Python testing
-  -	Manual User Story Testing
-  -	Fixed Bugs and Errors
-- Deployment
-  -	Github
-  -	Django and Heroku
-  -	Allauth
-- Forking
-- Cloning
-- AWS Setup
-- Stripe Payments
-- Credits
+- ``User Stories``
+- ``Agile Planning Environment``
+- `Exiting features`
+  -	`All Pages`
+  -	`Home Page`
+  -	`Products`
+  -	`Products Details`
+  -	`Add to bag notification`
+  -	`Bag Page`
+  -	`Checkout`
+  -	`Order Confirmation Page`
+  -	`User Profile`
+  -	`Wishlist`
+  -	`Admin`
+- `Future feature`
+- `Database schema`
+- `Marketing` 
+  -	`Search Engine Optimization`
+  -	`Web Marketing`
+  -	`Google Metrics`
+  -	`Business Model`
+  -	`Social Media Platforms`
+  -	`Email Subscription Service`
+  -	`Confirmation Email`
+- `Color Scheme`
+- `Typography`
+- `Favicon`
+- `Wireframes`
+  - `Desktop wireframe`
+  - `Mobile wireframe`
+- `Technologies used`
+- `Testing`
+  - `Manual and automated testing`
+  -	`Python testing`
+  -	`Manual User Story Testing`
+  -	`Fixed Bugs and Errors`
+- `Deployment`
+  -	`Github`
+  -	`Django and Heroku`
+  -	`Allauth`
+- `Forking`
+- `Cloning`
+- `AWS Setup`
+- `Stripe Payments`
+- `Credits`
 
 
-## User Stories
+## `User Stories`
 ___
 #### EPIC: Viewing and Navigation (Products)
 
@@ -76,97 +76,97 @@ ___
 
 #### EPIC: Wishlist Functionality
 
-## Agile Planning Environment
+## `Agile Planning Environment`
 ___
 The story point allocation above is based upon a 100-point iteration and uses the Fibonacci Sequence. Using the MoSCoW method each user story was then been labelled as being either 'Must Have', 'Should Have', 'Could Have' or 'Wont Have', based upon its importance to the project whilst following the 60:20:20 MoSCoW format. Note that the 'Wont Have' User Story below was excluded from the 60:20:20 MoSCoW allocation.
 
 PIC
 
-## Exiting features
+## `Exiting features`
 __________
 
-### All Pages
+### `All Pages`
 
-### Home Page
+### `Home Page`
 
-### Products
+### `Products`
 
-### Product Details
+### `Product Details`
 
-### Add to bag Information
+### `Add to bag Information`
 
-### Bag Page
+### `Bag Page`
 
-### Checkout
+### `Checkout`
 
-### Order Confirmation page
+### `Order Confirmation page`
 
-### User Profile
+### `User Profile`
 
-### Wishlist
+### `Wishlist`
 
-### Admin
+### `Admin`
 
-## Futute Feature
+## `Futute Feature`
 ______
 
-## Database Schema
+## `Database Schema`
 _______
 
-## Marketing
+## `Marketing`
 ______
 
-### Search Engine Optimization
+### `Search Engine Optimization`
 
-###	Web Marketing
+###	`Web Marketing`
 
-### Google Metrics
+### `Google Metrics`
 
-### Business Model
+### `Business Model`
 
-### Social Media Platforms
+### `Social Media Platforms`
 
-### Email Subscription Service
+### `Email Subscription Service`
 
-### Confirmation Email
+### `Confirmation Email`
 
-## Color Scheme
+## `Color Scheme`
 ______
 
-## Typography
+## `Typography`
 _____
 
-## Favicon
+## ``Favicon``
 ______
 
-## Wireframes
+## ``Wireframes``
 ______
-### Desktop Wireframes
+### ``Desktop Wireframes``
 
-### Mobile Wireframes
+### ``Mobile Wireframes``
 
-## Technologies used
+## ``Technologies used``
 _______
 
-## Testing
+## ``Testing``
 ______
-###	Manual and automated testing
+###	``Manual and automated testing``
 
-### Python Testing
+### ``Python Testing``
 
-### Manual User Story Testing
+### ``Manual User Story Testing``
 
-### Fixed Bugs and Errors
+### ``Fixed Bugs and Errors``
 
-## Deployment
+## ``Deployment``
 _________
 
-### GitHub
+### ``GitHub``
 * Created a new GitHub repository page using the 'Code Institute Template'.
 * Opened the new repository by clicking on the 'Gitpod' button.
 * Installed the relevant apps and packages needed to deploy to HEROKU.
 
-### Django and Heroku
+### ``Django and Heroku``
 Deployment of my project was scaffolded using the Code Institute's Django Blog Cheatsheet. Furthermore, the following steps were taken to deploy the project to Heroku from the GitHub repository:
 
 1. Create the Heroku App:
@@ -205,12 +205,12 @@ Before creating the Heroku app make sure your project has the following files:
 - Run the following command in the terminal window: heroku git:remote -a your_app_name_here. By doing this you will link the app to your GidPod terminal.
 - After linking the app you can deploy new versions to Heroku by running the command git push heroku main.
 
-### Allauth
+### ``Allauth``
 
 Within the Django Framework, Allauth a package that handles registration and login details was installed. More information on how this was installed can be found here: [Django Allauth Installation](https://django-allauth.readthedocs.io/en/latest/installation.html)
 
 
-## Forking the Repository
+## ``Forking the Repository``
 ________
 
 * Log in to GitHub and locate the required GitHub repository.
@@ -218,7 +218,7 @@ ________
 * You should now have a copy of the original repository within your GitHub account.
 * You can make changes to this new version whilst keeping the original version safe.
 
-## Cloning
+## ``Cloning``
 ________
 
 * Ensure that you are logged into GitHub and locate the required GitHub repository.
@@ -231,7 +231,7 @@ ________
 * For more information on how to clone a repository read GitHub's [Cloning a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) document.
 
 
-## AWS Set Up
+## ``AWS Set Up``
 _______
 
 The deployed site uses AWS S3 Buckets to store the webpages static and media files. More information on how you can set up an AWS S3 Bucket can be found below:
@@ -266,7 +266,7 @@ The deployed site uses AWS S3 Buckets to store the webpages static and media fil
  13. Once saved, scroll down to the Access Control List (ACL) and click Edit.
  14. Next to Everyone (public access), check the list checkbox and save your changes.
  
- ### IAM
+ ### ``IAM``
  
  1. Search for IAM within the AWS navigation bar and select it.
  2. Click User Groups that can be seen in the side bar and then click Create group and name the group 'manage-your-project-name'.
@@ -297,7 +297,7 @@ The deployed site uses AWS S3 Buckets to store the webpages static and media fil
 10. Ensure your policy is selected and navigate through until you click Add User.
 11. Download the CSV file, which contains the user's access key and secret access key.
 
-### Connecting AWS to Django
+### ``Connecting AWS to Django``
 
 1. Within your terminal install the following packages by typing
   pip3 install boto3
@@ -348,12 +348,12 @@ AWS_S3_OBJECT_PARAMETERS = {
 12. Under Permissions select the option Grant public-read access and click Upload.
 
 
-## Stripe Payments
+## ``Stripe Payments``
 ______
 
 To handle payments within the website ensure that you have set this up a guide on how this can be done can be found [here](https://stripe.com/docs/payments/accept-a-payment#web-collect-card-details).
 
 
-## Credits
+## ``Credits``
 ______
 ..
