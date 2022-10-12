@@ -61,6 +61,8 @@ _______
 - Forking
 - Cloning
 - AWS Setup
+  - IAM
+  - Connecting AWS to Django
 - Stripe Payments
 - Credits
 
@@ -533,5 +535,5 @@ ______
 - The [Coding Entrepreneurs tutorial](https://www.youtube.com/c/CodingEntrepreneurs) videos were used to help with building the cocktail ingredient section of my site helping me to further understand the relationship between different models.
 - The colour theme was chosen using [coolors](https://coolors.co/).
 - Help and support was given by the Code Institute Tutors.
-- 
-- Thank you to all those who have supported me in my journey this year! A special shout out to my mentor Spencer Barriball and partner for always being there and pushing me to keep going when things got tough. Also to the incredible tutors at Code Institute who helped me when I got stuck.
+- Special Thanks to my mentor [Spencer Barriball](https://github.com/5pence) fot all the coding advise and sharing useful links with me.
+- Thank you to all those who have supported me in my journey this year! A special shout out to my partner for always being there and pushing me to keep going when things got tough. Also to the incredible tutors at Code Institute who helped me when I got stuck.
