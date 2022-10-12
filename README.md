@@ -343,38 +343,38 @@ Deployment of my project was scaffolded using the Code Institute's Django Blog C
 1. Create the Heroku App:
 Before creating the Heroku app make sure your project has the following files:
 
-* requirements.txt to create this type the following within the terminal: pip3 freeze --local > requirements.txt.
-* Procfile to create this type the following within the terminal: python run.py > Procfile.
-- Select "Create new app" within Heroku.
+  * requirements.txt to create this type the following within the terminal: pip3 freeze --local > requirements.txt.
+  * Procfile to create this type the following within the terminal: python run.py > Procfile.
+  - Select "Create new app" within Heroku.
 
 2. Attach the Postgres database:
-- Search "Postgres" within the Resources tab and select the Heroku Postgres option.
+  - Search "Postgres" within the Resources tab and select the Heroku Postgres option.
 
 3. Create the settings.py file:
-- In Heroku navigate to the Settings tab, click on Reveal Config Vars and copy the DATABASE_URL.
-- Within the Gitpod workspace, create an env.py file within the main directory.
-- Import the env.py file within the settings.py file.
-- Create a SECRET_KEY value within the Reveal Config Vars in Heroku.
-- Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file.
-- Run the following command in your terminal python3 manage.py migrate.
-- Add the CLOUDINARY_URL to the Reveal Config Vars in Heroku and add this to your settings.py file.
-- Add the following sections to your settings.py file:
-* Cloudinary to the INSTALLED_APPS list
-* STATICFILES_STORAGE
-* STATICFILES_DIRS
-* STATIC_ROOT
-* MEDIA_URL
-* DEFAULT_FILE_STORAGE
-* TEMPLATES_DIR
-* Update DIRS in TEMPLATES with TEMPLATES_DIR
-* Update ALLOWED_HOSTS with ['app_name.heroku.com','localhost']
+  - In Heroku navigate to the Settings tab, click on Reveal Config Vars and copy the DATABASE_URL.
+  - Within the Gitpod workspace, create an env.py file within the main directory.
+  - Import the env.py file within the settings.py file.
+  - Create a SECRET_KEY value within the Reveal Config Vars in Heroku.
+  - Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file.
+  - Run the following command in your terminal python3 manage.py migrate.
+  - Add the CLOUDINARY_URL to the Reveal Config Vars in Heroku and add this to your settings.py file.
+  - Add the following sections to your settings.py file:
+  * Cloudinary to the INSTALLED_APPS list
+  * STATICFILES_STORAGE
+  * STATICFILES_DIRS
+  * STATIC_ROOT
+  * MEDIA_URL
+  * DEFAULT_FILE_STORAGE
+  * TEMPLATES_DIR
+  * Update DIRS in TEMPLATES with TEMPLATES_DIR
+  * Update ALLOWED_HOSTS with ['app_name.heroku.com','localhost']
 
 4. Store Static and Media files in Cloudinary and Deploy to Heroku:
-- Create three directories in the top level directory: media, storage and templates.
-- Create a file named "Procfile" in the main directory and ass the following: [web: gunicorn project-name.wsgi].
-- Login to Heroku within the terminal window using heroku login -i
-- Run the following command in the terminal window: heroku git:remote -a your_app_name_here. By doing this you will link the app to your GidPod terminal.
-- After linking the app you can deploy new versions to Heroku by running the command git push heroku main.
+  - Create three directories in the top level directory: media, storage and templates.
+  - Create a file named "Procfile" in the main directory and ass the following: [web: gunicorn project-name.wsgi].
+  - Login to Heroku within the terminal window using heroku login -i
+  - Run the following command in the terminal window: heroku git:remote -a your_app_name_here. By doing this you will link the app to your GidPod terminal.
+  - After linking the app you can deploy new versions to Heroku by running the command git push heroku main.
 
 ### Allauth
 
@@ -475,7 +475,7 @@ The deployed site uses AWS S3 Buckets to store the webpages static and media fil
   pip3 install django-storages 
   
 2. Freeze the requirements by typing
-pip3 freeze > requirements.txt
+  pip3 freeze > requirements.txt
 
 3. Add storages to your installed apps within your settings.py file.
 4. At the bottom of the settings.py file add the following code:
@@ -492,10 +492,10 @@ if 'USE_AWS' in os.environ:
   AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
   
 9. Inside the settings.py file inside the bucket config if statement add the following lines of code:
-STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-STATICFILES_LOCATION = 'static'
-DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-MEDIAFILES_LOCATION = 'media'
+  STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+  STATICFILES_LOCATION = 'static'
+  DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+  MEDIAFILES_LOCATION = 'media'
 
 STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
@@ -527,4 +527,11 @@ To handle payments within the website ensure that you have set this up a guide o
 
 ## Credits
 ______
-..
+
+- The images used on my site were taken from [Pexels](https://www.pexels.com/).
+- The icons included throughout the website were taken from [Font-Awesome](https://fontawesome.com/).
+- The [Coding Entrepreneurs tutorial](https://www.youtube.com/c/CodingEntrepreneurs) videos were used to help with building the cocktail ingredient section of my site helping me to further understand the relationship between different models.
+- The colour theme was chosen using [coolors](https://coolors.co/).
+- Help and support was given by the Code Institute Tutors.
+- 
+- Thank you to all those who have supported me in my journey this year! A special shout out to my mentor Spencer Barriball and partner for always being there and pushing me to keep going when things got tough. Also to the incredible tutors at Code Institute who helped me when I got stuck.
