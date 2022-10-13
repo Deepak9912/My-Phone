@@ -249,12 +249,6 @@ _____
 
 The aim of the font was to create a sophisticated feel within the site, complementing the imagery seen throughout. Moreover, text colours were either dark black or white depending on the background contrast ratio, to ensure information was accessible to users who may be visually impaired. The main font used on the site was 'Mali' and this was selected using Google Fonts
 
-## Wireframes
-______
-### Desktop Wireframes
-
-### Mobile Wireframes
-
 [Back to top](#my-phone)
 
 ## Technologies used
