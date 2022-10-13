@@ -43,10 +43,6 @@ _______
   -	[Confirmation Email](#confirmation-email)
 - [Color Scheme](#color-scheme)
 - [Typography](#typography)
-- [Favicon](#favicon)
-- [Wireframes](#wireframes)
-  - [Desktop wireframe](#desktop-wireframes)
-  - [Mobile wireframe](#mobile-wireframes)
 - [Technologies used](#technologies-used)
 - [Testing](#testing)
   - [Manual and automated testing](#manual-and-automated-testing)
@@ -252,9 +248,6 @@ Three main colors used on the website are #000 (black), ##dc3545 (red), #fff (wh
 _____
 
 The aim of the font was to create a sophisticated feel within the site, complementing the imagery seen throughout. Moreover, text colours were either dark black or white depending on the background contrast ratio, to ensure information was accessible to users who may be visually impaired. The main font used on the site was 'Mali' and this was selected using Google Fonts
-
-## Favicon
-______
 
 ## Wireframes
 ______
