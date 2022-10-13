@@ -416,6 +416,7 @@ ________
 * Press Enter to create your local clone.
 * For more information on how to clone a repository read GitHub's [Cloning a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) document.
 
+[Back to top](#my-phone)
 
 ## AWS Set Up
 _______
