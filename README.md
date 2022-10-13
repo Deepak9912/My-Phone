@@ -440,6 +440,22 @@ A lighthouse report was generated on each page of the site and the following ste
 
 ### Fixed Bugs and Errors
 
+Error 1. Products on the all products page were all being filtered regardless of the category that was initially selected, because the filter selection option did not have the current category selection included as part of its filtering option.
+
+#### Solution : 
+Within the filtering navigation area the following line of code was added "?category={{ selected_categories }}"
+
+Error 2. I added all the phone products through admin but they did not update in the database, therefore i could not see them on the deployed website.
+
+#### Solotion :
+Added new new.json and products.json file main level project directory and i was able to see the products images and details.
+
+Error 3. Email confirmation was not working, there was no email confirmation after making an online purchase.
+
+#### Solution :
+I realised i only one webhook handler which was for local repository, therefore i created a new webhook handler for the deployed website and i was able to get the confirmation email for purchase on the website.
+
+
 [Back to top](#my-phone)
 
 ## Deployment
