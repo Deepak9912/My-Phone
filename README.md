@@ -13,58 +13,57 @@ This website application includes CRUD functionality, user authentication (using
 
 ## Table of Contents:
 _______
-- User Stories
-- Agile Planning Environment
-- Exiting features
-  -	All Pages
-    - Navigation
-    - Footer
-  -	Home Page
-  -	Products`
-  -	Products Details
-  -	Add to bag notification
-  -	Bag Page
-  -	Checkout
-  -	Order Confirmation Page
-  -	User Profile
-  -	Wishlist
-  -	Admin
-    - Add Product
-    - Edit Product
-    - Delete Product
-- Future feature
-- Database schema
-- Marketing
-  -	Search Engine Optimization
-  -	Web Marketing
-  -	Google Metrics
-  -	Business Model
-  -	Social Media Platform
-  -	Email Subscription Service
-  -	Confirmation Email
-- Color Scheme
-- Typography
-- Favicon
-- Wireframes
-  - Desktop wireframe
-  - Mobile wireframe
-- Technologies used
-- Testing
-  - Manual and automated testing
-  -	Python testing
-  -	Manual User Story Testing
-  -	Fixed Bugs and Errors
-- Deployment
-  -	Github
-  -	Django and Heroku
-  -	Allauth
-- Forking
-- Cloning
-- AWS Setup
-  - IAM
-  - Connecting AWS to Django
-- Stripe Payments
-- Credits
+- [User Stories](#user-stories)
+- [Agile Planning Environment](#agile-planning-environment)
+- [Exiting features](#exiting-features)
+  -	[All Pages](#all-pages)
+    - [Navigation](#navigation)
+    - [Footer](#footer)
+  -	[Home Page](#home-page)
+  -	[Products](#products)
+  -	[Products Details](#product-details)
+  -	[Add to bag Information](#add-to-bag-information)
+  -	[Bag Page](#bag-page)
+  -	[Checkout](#checkout)
+  -	[Order Confirmation Page](#order-confirmation-page)
+  -	[User Profile](#user-profile)
+  -	[Wishlist](#wishlist)
+  -	[Admin](#admin)
+    - [Add Product](#add-product)
+    - [Edit Product](#edit-product)
+    - [Delete Product](#delete-product)
+- [Future feature](#futute-feature)
+- [Database schema](#database-schema)
+- [Marketing](#marketing)
+  -	[Search Engine Optimization](#search-engine-optimization)
+  -	[Google Metrics](#google-metrics)
+  -	[Business Model](#business-model)
+  -	[Social Media Platform](#social-media-platforms)
+  -	[Email Subscription Service](#email-subscription-service)
+  -	[Confirmation Email](#confirmation-email)
+- [Color Scheme](#color-scheme)
+- [Typography](#typography)
+- [Favicon](#favicon)
+- [Wireframes](#wireframes)
+  - [Desktop wireframe](#desktop-wireframes)
+  - [Mobile wireframe](#mobile-wireframes)
+- [Technologies used](#technologies-used)
+- [Testing](#testing)
+  - [Manual and automated testing](#manual-and-automated-testing)
+  -	[Python testing](#python-testing)
+  -	[Manual User Story Testing](#manual-user-story-testing)
+  -	[Fixed Bugs and Errors](#fixed-bugs-and-errors)
+- [Deployment](#deployment)
+  -	[Github](#github)
+  -	[Django and Heroku](#django-and-heroku)
+  -	[Allauth](#allauth)
+- [Forking](#forking-the-repository)
+- [Cloning](#cloning)
+- [AWS Setup](#aws-set-up)
+  - [IAM](#iam)
+  - [Connecting AWS to Django](#connecting-aws-to-django)
+- [Stripe Payments](#stripe-payments)
+- [Credits](#credits)
 
 
 ## User Stories
