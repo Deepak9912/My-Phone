@@ -246,6 +246,7 @@ ______
 
 The colors within the site were carefully selected to mirror the product sold online at MyPhone. The dark contrasts against the white making elements of importance stand out on the page. These colors were initially selected from the sites main banner image using DEV tools, allowing for all colors within the page to complement each other nicely.
 
+Three main colors used on the website are #000 (black), ##dc3545 (red), #fff (white)
 
 ## Typography
 _____
@@ -321,9 +322,121 @@ _______
 ______
 ###	Manual and automated testing
 
+1. HTML & CSS: W3C Validation
+
+HTML and CSS was checked using an online W3C Validator to ensure there were no errors within the code. When the site was ran through the validators there were no errors at the point of deployment.
+
+  - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+  - [WSC HTML Validator](https://validator.w3.org/)
+
+2. JavaScript: JSHint
+
+JavaScript code was tested regularly both manually and automatically through [JSHint](https://jshint.com/) and the [DevTools](https://developer.chrome.com/docs/devtools/). DevTools allowed me to test responses using the console log function and JSHint enabled me to ensure that my code was hitting the style guidelines. Upon the launch of my project JSHint showed no errors or warnings with my code.
+
+3. Lighthouse Reports
+
+A lighthouse report was generated on each page of the site and the following steps were taken to improve sections based on the feedback it provided. The overall perfrmance of the website is 96%.
+
 ### Python Testing
 
+
 ### Manual User Story Testing
+
+1. View a list of all Products
+  - From all pages of the site the product page was tested to ensure it navigated to the all products page. 
+  - The drop down product menu was also tested from all pages of the site for users and admin when they were logged into their accounts. 
+  - The drop down product menu was tested on mobile devices to ensure it worked and navigated to the all products page.
+
+2. View Individual Products
+  - From the all products page on desktop and mobile each phone product was selected to ensure it displayed the products unique product detail.
+  - Links shown on the users wish list were tested on mobile and desktop to ensure they navigated to that specific products detail page.
+  - Our products shown on the home page were selected to ensure that the links displayed the correct phone product.
+
+3. Easily Register for an account
+  - [Temp-mail](https://temp-mail.org/en/) was used to create a temporary email address used to sign up for an account. 
+  - Upon registering for an account the postgres admin database was checked using super user credentials to see if the new user details appeared and were verified.
+
+4. Easily login and logout of the account
+  - Registered user details were used on the login page of the site on mobile and desktop to test the login function of the page.
+  - As a logged in user the logout button was clicked and then confirmed to test the whether users could logout successfully.
+
+5. Easily recover my password if I forget it
+  - From the login page of the site the forgot password button was clicked and a previous user email address was entered to test whether a reset email was sent. 
+  - The pre-existing user email was logged in successfully using the new password.
+
+6. Receive an email to verify I have created an account
+  - Upon registering for an account the mail inbox was checked to see whether a confirmation email was sent.
+
+7. Register/login to an account via social media
+  - When used clicks on facebook icon on footer, it will bring them to facebook page.
+
+8. Sort through all Phone products
+  - On the all products page, the drop down sort function was tested on mobile and desktop to ensure that products sorted correctly on the screen.
+
+9. Sort based on the Phone category
+  - On the individual category pages the sort drop down filter was tested on mobile and desktop to ensure products were ordered correctly within the category.
+
+10. Search a product by name and description
+  - In the search bar product names were entered and searched to ensure they displayed the correct products to the user. 
+  - In the search bar the category was entered to ensure they display the correct products to the user.
+
+11. See search results quickly and easily
+  - Upon searching for an item the page was checked to ensure that it displayed the desired results.
+
+12. View items in my bag to be purchased
+  -  Items were added to the users shopping bag and the bag icon at the top of the page was then clicked to ensure it displays all of the relevant item details to the user.
+  - The bag icon was selected from multiple different pages on the site to ensure that the correct view was shown in each instance.
+
+13. View an order confirmation when my order is complete
+  - Once checkout information was filled in and confirmed it was tested whether the confirmation screen appeared to users displaying the correct details on the page.
+
+14. Securely provide payment details
+  - ayment details were added using the temporary card details 4242424242424242 through stripe, within stripe the panel was checked to ensure that the payment was successful and signals were received correctly.
+
+15. Enter payment information quickly
+  - Checkout details were filled in and the payment section at the bottom of the page took very little time to complete.
+
+16. Adjust the quantity of items in my bag
+  - Within shopping bag the quantity buttons were used to alter the amount of product seen within the bag. Upon clicking the refresh button the price information at the bottom of the page was checked to ensure it mirrored this alteration.
+  -  A quantity over 50 was entered and the refresh button clicked to ensure a popup error message appeared to the user saying that the quantity must be below 50
+  - The delete button was clicked on the quantity to reduce the quantity to 0 and it was ensured the product no longer appeared in the bag.
+
+16. Select the quantity of product to add to shopping bag
+  - Within the product detail pages the quantity buttons were used to alter the amount of product selected by the user. Upon adding this to the shopping bag a message appeared with information on the quantity being shown to users.
+  - A value over 50 was entered to ensure that an error message appeared to users limiting how much product they could buy.
+
+17. Quickly see the total cost of all my products
+  - Upon adding a product to the shopping bag it was tested that a success message appeared to users displaying all of the total cost of all their products. 
+  - On mobile devices it was checked that the total value of all the products could also be seen on a popup message to users.
+
+18. Add a Product
+  - As a logged in superuser the add product button was selected and test product details were inputted into each field. The add product button was clicked and it was tested that the product information was mirrored on the screen as a summary. 
+  - Upon adding a product the postgres database was checked to ensure that this had been stored correctly.
+  - Invalid details were inpute into the add product form to ensure that the user got an error message and details were not saved within the database.
+
+19. Edit/Update a Product
+  - From both the all products and the product detail page the edit button was clicked to ensure a prefilled edit form appeared to logged in site admin.
+  - Details were changed on the product form and then saved, these details were then checked on the product detail page. 
+  - Invalid form data was inpute and then the save button was clicked which gave an error message to the admin user.
+
+20. Delete a Product
+  - As a site admin the delete button was clicked and it was then checked that this product no longer appeared on the all product view.
+  - After deletion of a product it was also checked that this product no longer appeared in the postgres database.
+
+21. Leave a Product Review
+  - As a logged in user it was tested that a review could be left and that the review appeared on the correct product detail view.
+
+22. Delete a Review
+  - As a site admin it was checked that the user could delete a review and that when the delete button was clicked it no longer appeared on the screen.
+  - Upon deletion it was checked that a message of confirmed deletion appeared on the screen.
+
+23. Add items to my wish list
+  - As a non logged in user it was tested that items could not be added to a wish list and instead users were encouraged to sign in. 
+  - As a logged in user it was tested that upon clicking the add to wish list button the product was added to the users wish list for later viewing.
+  - It was tested that the wish list could be accessed for many different web pages and that the correct products appeared.
+
+24. Remove items from my wish list
+  - The remove from wish list button was clicked and it was tested that when clicking this the wish list item no longer appeared on the users wish list.
 
 ### Fixed Bugs and Errors
 
