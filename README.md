@@ -1,6 +1,12 @@
 # My-Phone
 ________
-My-Phone is a full-stack Django website built using Python, JavaScript, HTML and CSS. This web application is a full B2C e-commerce website for a fictional online mobile phone website. 
+My-Phone is a full-stack Django website built using Python, JavaScript, HTML and CSS. This web application is a full B2C e-commerce website for a fictional online mobile phone website.
+
+(Developer: Deepak Jadoun)
+
+[My-Phone live link](https://my-phone2234.herokuapp.com/)
+
+![WELCOME-IMG](https://user-images.githubusercontent.com/93731898/196056627-b670fd06-81be-4fc7-8c12-0f82ad1c7c3a.PNG)
 
 ## Aim
 ________
@@ -8,7 +14,7 @@ My-Phone specialises in selling and delivering the latest technology phones at t
 
 This website application includes CRUD functionality, user authentication (using Django's allauth library), email validation and database interaction.
 
-[My-Phone live link](https://my-phone2234.herokuapp.com/)
+
 
 
 ## Table of Contents:
@@ -69,23 +75,41 @@ _______
 ___
 #### EPIC: Viewing and Navigation (Products)
 
+![view navigation](https://user-images.githubusercontent.com/93731898/196056694-69daee2b-620f-4b9f-aa24-ffccba3004ea.PNG)
+
 #### EPIC: Registration and Verification
+
+![registration verification](https://user-images.githubusercontent.com/93731898/196056712-7447eb55-b4da-434a-9633-5829ce472045.PNG)
 
 #### EPIC: Sorting and Searching
 
+![sorting searching](https://user-images.githubusercontent.com/93731898/196056717-65c2330f-26fb-47f1-bd6e-d26ba28cd95c.PNG)
+
 #### EPIC: Purchasing and Checkout
+
+![purchasing checkout](https://user-images.githubusercontent.com/93731898/196056722-edad4580-a07f-4835-800c-6f1c1a5a03ff.PNG)
 
 #### EPIC: Admin and Store Management
 
-#### EPIC: Product and Cocktail Reviews
+![ADMIN AND STORE MANAGEMENT](https://user-images.githubusercontent.com/93731898/196056738-2f37c863-31aa-441a-9942-e199d91ae9cb.PNG)
+
+#### EPIC: Product Reviews
+
+![review](https://user-images.githubusercontent.com/93731898/196056837-8557c84e-0fd4-4a9d-90f2-1ebb549f9cb2.PNG)
 
 #### EPIC: Wishlist Functionality
+
+![Wishlist](https://user-images.githubusercontent.com/93731898/196056769-62a20a19-506f-4bee-9379-fb16e45932db.PNG)
+
 
 ## Agile Planning Environment
 ___
 The story point allocation above is based upon a 100-point iteration and uses the Fibonacci Sequence. Using the MoSCoW method each user story was then been labelled as being either 'Must Have', 'Should Have', 'Could Have' or 'Wont Have', based upon its importance to the project whilst following the 60:20:20 MoSCoW format. Note that the 'Wont Have' User Story below was excluded from the 60:20:20 MoSCoW allocation.
 
-pic
+![agile](https://user-images.githubusercontent.com/93731898/196056850-ee0fd089-5d85-408a-a87d-84a654d8639d.PNG)
+
+![agile1](https://user-images.githubusercontent.com/93731898/196056912-09350d10-00ec-4b91-807a-98dc598a058c.PNG)
+
 
 [Back to top](#my-phone)
 
@@ -97,10 +121,15 @@ __________
   #### Navigation
 
   The main navigation bar is located at the top of the webpage and has different functionalities. It contains the main company title to the left, a product search bar in the center and the Wishlist, bag & user profile icons to the right. When clicked on, the user profile icon branches into more links. These include authentication links (register, login & logout), my profile, my Wishlist and product management (if admin is logged in). Below the product search bar, there are individual navigation links that allow the user to browse through the products via different filters. On smaller viewports, a hamburger menu is present to keep the look of the navbar refined and clean.
+  
+![navbar](https://user-images.githubusercontent.com/93731898/196056973-23db49b0-4639-443d-8bc7-408174013e45.PNG)
 
   #### Footer
 
   The footer of the page provides users with informational resources with copyright of the website on the left-hand side, and social media icons in the middle and contact details on the right-hand side of the footer.
+  
+![footer](https://user-images.githubusercontent.com/93731898/196057008-14ad943a-9453-4c27-a97d-459e50838dd8.PNG)
+
 
 ### Home Page
 
@@ -108,39 +137,61 @@ The main image on the site was carefully selected, with the aim to entice custom
 The Home Page of the website is segregated into different sections. This includes a CTA (Call to Action) that allows the users to easily access the list of phone products to browse through. A main banner of a product that represents the company and its market which is present to be appealing to user. About section- it introduces users to the website. Finally, a MailChimp powered email newsletter form that allows users to input their email address to subscribe to My Phone, followed by footer.
 
 
+
 ### Products
 
 The products list page displays the summary of each product in a card container, an image, product name, category, price and rating. Each product card can be clicked on to view the product in detail on another page. Products can also be filtered via different categories; by rating and by price (ascending & descending).
+
+![products](https://user-images.githubusercontent.com/93731898/196057076-e0ca0076-902c-4781-a16c-9c80c17151f1.PNG)
 
 ### Product Details
 
 The product detail page displays full information of the product including product title, price, category, rating, and product information. Users can add the product to their Wishlist and add the specified quantity of the product to their basket for checkout. Registered users can leave a review below products to share their opinions with other users.
 Users will also see similar products options.
 
+![product-detail](https://user-images.githubusercontent.com/93731898/196057110-380db626-269b-4e10-b76b-173b71675cb6.PNG)
+
 
 ### Add to bag Information
 
 One of the main features of My Phone is that distinguishes it as an e-commerce store is the add to basket feature. Users can add a specified quantity of products to their basket for purchase. A success message is displayed on the screen when products are added.
 
+![success-msg](https://user-images.githubusercontent.com/93731898/196057150-d80571f6-4e72-46fa-92d8-0b954e5f1b05.PNG)
+
+
 ### Bag Page
 
 Once the user is happy with their selection, they can advance to the shopping basket page to confirm the product selections, quantity and prices. Users can also add or remove products whilst on this page to update the quantity before checkout.
+
+![shopping-bag](https://user-images.githubusercontent.com/93731898/196057200-8c3384a9-db55-44c1-8c87-9dc2914bf53e.PNG)
 
 ### Checkout
 
 When the user is ready to proceed to the checkout page after selecting their choice of products. Here, the user is required to fill out personal information; First name, surname, email address, phone number, street address, town/city, county, postal code, and country. The user is also required to fill out payment information which in this project is powered by Stripe, long card number. expiry date and CVC. As Stripe is not fully activated in this project, only test payment details can be used to process payments. Users also have the option to save their personal information to their profile so future checkouts are easier instead of having to fill out the form repeatedly. Finally, before proceeding with the payment, the order summary is displayed next to the order form so that it is clear to the user the selection of products they are ordering.
 
+![checkout](https://user-images.githubusercontent.com/93731898/196057245-839577a6-5339-4dcb-9ab9-528c3721cda9.PNG)
+
+
 ### Order Confirmation page
 
 After users have placed their order, an order confirmation page is displayed with the summary of the order placed including product details, personal information, order number and the email that is used to send the order confirmation to.
+
+![order-confiramtion](https://user-images.githubusercontent.com/93731898/196057303-a76c7cba-995d-457f-92d2-19e4309975e6.PNG)
+
 
 ### User Profile
 
 Registered users have an option to view their profile that lists their saved personal information which can be used for future checkouts and also a history of the orders they have placed with their respective order numbers. These order numbers can be hovered over and clicked on so that users can view the full order details.
 
+![user-profile](https://user-images.githubusercontent.com/93731898/196057337-0e247532-b678-49fc-9d86-c6ccc8a73520.PNG)
+
+
 ### Wishlist
 
 Registered users have an option to view their Wishlist and the products that have been added to it. The Wishlist feature is convenient as it does not expire, even after the user signs out. So, if the user wants to wait a longer period to purchase a product, they can keep it stored in their Wishlist. Users also have an option to remove any product from their Wishlist if no longer required.
+
+![wishlist-page](https://user-images.githubusercontent.com/93731898/196057365-0514c1c2-e272-44ab-a709-fb85c7cc6658.PNG)
+
 
 ### Admin
 
@@ -150,9 +201,15 @@ The products feature of the site all follow CRUD functionality allowing the admi
 
   Admins can add products on the site using the site admin button at the top of the page. Upon clicking this admin users are given a form containing vital product information as seen below.
 
+![add-product](https://user-images.githubusercontent.com/93731898/196057422-bcbf04dd-1034-4955-b249-9bf58eeb7bc5.PNG)
+
   #### Edit Product
 
   Admin can edit products using the buttons on the product page and product detail pages. The form shown to admin already contains current information saving time when making alterations.
+  
+![product admin](https://user-images.githubusercontent.com/93731898/196057467-088020ab-e4e9-4242-9378-bb924e09591e.PNG)
+
+![edit product](https://user-images.githubusercontent.com/93731898/196057462-cd38ceec-b5ae-4b38-b335-777c76a3b48d.PNG)
 
   #### Delete Product
 
@@ -174,7 +231,8 @@ _______
 
 Entity Relationship Databases (ERD) were created to help develop this project. 
 
-pic
+![databaseschema](https://user-images.githubusercontent.com/93731898/196057492-198eaf1c-8442-4d35-9f17-86d47c7323bc.PNG)
+
 
 [Back to top](#my-phone)
 
@@ -228,15 +286,14 @@ pic
 
 ### Email Subscription Service
 
-Users are encouraged to signup for newsletters, discounts and information about the products sold at My Phone. The email subscription service is ran through Mailchimp, allowing shop owners to send marketing emails through the platform, increasing engagement within the site. Below is a screenshot of one of the subscription emails that was sent by My Phone's shop owner:
+Users are encouraged to signup for newsletters, discounts and information about the products sold at My Phone. The email subscription service is ran through Mailchimp, allowing shop owners to send marketing emails through the platform, increasing engagement within the site.
 
-Pic
 
 ### Confirmation Email
 
 When customers sucessfully purchase a product they are sent an automatic email containing all of their order confirmation details. An image of what this confirmation email looks like can be seen below:
 
-pic
+![email confirmation](https://user-images.githubusercontent.com/93731898/196057511-34dd3fb4-2a36-40c7-9beb-f02f8f019edd.PNG)
 
 [Back to top](#my-phone)
 
@@ -246,6 +303,8 @@ ______
 The colors within the site were carefully selected to mirror the product sold online at MyPhone. The dark contrasts against the white making elements of importance stand out on the page. These colors were initially selected from the sites main banner image using DEV tools, allowing for all colors within the page to complement each other nicely.
 
 Three main colors used on the website are #000 (black), ##dc3545 (red), #fff (white)
+
+![colors](https://user-images.githubusercontent.com/93731898/196057564-42ea7f80-d4bc-4051-b577-3f07e0f6761e.PNG)
 
 ## Typography
 _____
