@@ -15,7 +15,7 @@ def wishlist_items(request):
             'item_id': item_id,
             'product': product,
         })
-    
+
     context = {
         'wishlist_products': wishlist_products,
     }
