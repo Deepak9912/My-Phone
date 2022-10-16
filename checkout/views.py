@@ -1,5 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
-from django.views.decorators.http import require_POST
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+)
 from django.contrib import messages
 from django.conf import settings
 
@@ -13,6 +14,7 @@ from bag.contexts import bag_contents
 
 import stripe
 import json
+
 
 def cache_checkout_data(request):
     try:
@@ -94,10 +96,9 @@ def checkout(request):
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
                 amount=stripe_total,
-                currency=settings.STRIPE_CURRENCY,
-            )
-        
-         # Attempt to prefill the form with any info the user maintains in user profile
+                currency=settings.STRIPE_CURRENCY,)
+
+        # Attempt to prefill the form with any info the user maintains in user profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)

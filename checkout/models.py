@@ -16,7 +16,8 @@ class Order(models.Model):
     """
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
-                                     null=True, blank=True, related_name='orders')
+                                     null=True, blank=True,
+                                     related_name='orders')
     full_name = models.CharField(max_length=50, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
     email = models.EmailField(max_length=250, null=False, blank=False)
@@ -91,10 +92,10 @@ class OrderLineItem(models.Model):
                                 on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6,
-                                         decimal_places=2,
-                                         null=False,
-                                         blank=False,
-                                         editable=False)
+                                        decimal_places=2,
+                                        null=False,
+                                        blank=False,
+                                        editable=False)
     
     def save(self, *args, **kwargs):
         """

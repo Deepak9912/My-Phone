@@ -43,7 +43,7 @@ def adjust_bag(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
-    
+
     if quantity > 0:
         bag[item_id] = quantity
         messages.success(
