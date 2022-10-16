@@ -8,8 +8,10 @@ class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         fields = '__all__'
-    
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+
+    image = forms.ImageField(label='Image',
+                             required=True,
+                             widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -27,7 +29,8 @@ class ReviewForm(forms.ModelForm):
     """
     class Meta:
         """
-        Specifies the model and fields that are displayed on the form.
+        Specifies the model and fields that are
+        displayed on the form.
         """
         model = Review
         fields = ('title', 'user_review', )

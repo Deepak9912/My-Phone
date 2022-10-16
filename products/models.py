@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 # Create your models here.
 class Category(models.Model):
     """
@@ -18,7 +19,7 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
-    
+
     def get_friendly_name(self):
         """
         returns the category name
@@ -71,7 +72,8 @@ class Review(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        '''
+        """
         it Returns the review as a string
-        '''
+        """
+
         return f'{self.title}'
