@@ -43,7 +43,7 @@ class Order(models.Model):
     original_bag = models.TextField(null=False, blank=False, default='')
     stripe_pid = models.CharField(
         max_length=254, null=False, blank=False, default='')
-    
+
     def _generate_order_number(self):
         """
         Generates a unique and random order number using UUID
@@ -92,11 +92,11 @@ class OrderLineItem(models.Model):
                                 on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6,
-                                        decimal_places=2,
-                                        null=False,
-                                        blank=False,
-                                        editable=False)
-    
+                                         decimal_places=2,
+                                         null=False,
+                                         blank=False,
+                                         editable=False)
+
     def save(self, *args, **kwargs):
         """
         Override the saving method for the lineitem total
