@@ -43,6 +43,9 @@ _______
   -	[Confirmation Email](#confirmation-email)
 - [Color Scheme](#color-scheme)
 - [Typography](#typography)
+- [WireFrames](#wireframes)
+  - [Desktop Wireframes](#desktop-wireframes)
+  - [Mobile Wireframes](#mobile-wireframes)
 - [Technologies used](#technologies-used)
 - [Testing](#testing)
   - [Manual and automated testing](#manual-and-automated-testing)
@@ -250,6 +253,13 @@ _____
 The aim of the font was to create a sophisticated feel within the site, complementing the imagery seen throughout. Moreover, text colours were either dark black or white depending on the background contrast ratio, to ensure information was accessible to users who may be visually impaired. The main font used on the site was 'Mali' and this was selected using Google Fonts
 
 [Back to top](#my-phone)
+
+## Wireframes
+Although the wireframes for site users and site admin are similar there are a few subtle differences between some pages to help admin modify, add and delete products.
+
+  ### Desktop Wireframes
+
+  ### Mobile Wireframes
 
 ## Technologies used
 _______
