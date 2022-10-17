@@ -282,7 +282,13 @@ Customers who are buying products from My Phone should be able to:
 
 As part of the Code Institute assessment criteria, a Facebook page was created to promote the company. Facebook is used by many around the globe and is a key marketing strategy to be successful e-commerce business. The Facebook page includes a CTA button which drives traffic away from social media and to the website. A screenshot of the Facebook webpage is shown below:
 
-pic
+![Screenshot_20221008_135453_com facebook katana](https://user-images.githubusercontent.com/93731898/196146228-55dffbb8-3f54-40bc-968e-7c27c7f66338.jpg)
+
+![Screenshot_20221008_135505_com facebook katana](https://user-images.githubusercontent.com/93731898/196146232-1ae0f327-1743-4569-88da-1c78f8ecd5e6.jpg)
+
+![Screenshot_20221008_135521_com facebook katana](https://user-images.githubusercontent.com/93731898/196146236-703c843c-218c-4c31-9f7e-d0b967fc44b4.jpg)
+
+![Screenshot_20221008_135441_com facebook katana](https://user-images.githubusercontent.com/93731898/196146241-aa677c8d-026d-4955-9d18-224a71bccaf6.jpg)
 
 ### Email Subscription Service
 
