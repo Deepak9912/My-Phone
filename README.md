@@ -317,8 +317,94 @@ The aim of the font was to create a sophisticated feel within the site, compleme
 Although the wireframes for site users and site admin are similar there are a few subtle differences between some pages to help admin modify, add and delete products.
 
   ### Desktop Wireframes
+  
+  <details><summary>HomePage</summary>
+  
+  ![home](https://user-images.githubusercontent.com/93731898/196134342-feaef168-2f2a-4cf1-aca5-727beb5c5838.PNG)
+  
+  </details>
+  
+  <details><summary>Products</summary>
+
+  ![Products](https://user-images.githubusercontent.com/93731898/196135276-7b0b0206-c526-4cc9-a3ad-eafbf385593b.PNG)
+  
+  </details>
+  
+  <details><summary>Product-Detail</summary>
+
+  ![Produc-details](https://user-images.githubusercontent.com/93731898/196135417-8d7e8230-9302-49c9-bd89-d01e312a880f.PNG)
+
+  </details>
+  
+  <details><summary>Bag</summary>
+ 
+  ![bag](https://user-images.githubusercontent.com/93731898/196135556-b1497454-ab3d-496d-a0c7-c383afbea1f3.PNG)
+
+  </details>
+  
+  <details><summary>Checkout</summary>
+ 
+  ![checkout](https://user-images.githubusercontent.com/93731898/196135640-343976b4-485f-4b09-b2fd-fcc35e9c60d2.PNG)
+
+  </details>
+  
+  <details><summary>Wishlist</summary>
+ 
+  ![wishlist](https://user-images.githubusercontent.com/93731898/196135788-202f5dda-a8ae-4cdd-883d-19f39fee338a.PNG)
+
+  </details>
+  
+  <details><summary>Profile Page</summary>
+
+  ![Profile](https://user-images.githubusercontent.com/93731898/196135888-3e5094ab-9c31-47d5-92a2-b8f034838e7a.PNG)
+
+  </details>
+  
 
   ### Mobile Wireframes
+  
+   <details><summary>HomePage</summary>
+  
+  ![Mobile home](https://user-images.githubusercontent.com/93731898/196136189-0c502825-983d-4a88-a6df-d3eceabba67c.PNG)
+
+   </details>
+  
+  <details><summary>Products</summary>
+
+  ![products](https://user-images.githubusercontent.com/93731898/196136272-bebcec47-27a1-4e3d-bd05-afcfcd786a81.PNG)
+  
+  </details>
+  
+  <details><summary>Product-Detail</summary>
+
+  ![Product details](https://user-images.githubusercontent.com/93731898/196136312-bb265781-70a7-4311-b777-0fea8a6bebfb.PNG)
+
+  </details>
+  
+  <details><summary>Bag</summary>
+ 
+  ![Shopping bag](https://user-images.githubusercontent.com/93731898/196136425-3e0875a4-61ec-4df3-bf22-b8fa598213a8.PNG)
+
+  </details>
+  
+  <details><summary>Checkout</summary>
+ 
+  ![checkout](https://user-images.githubusercontent.com/93731898/196136459-b7f47d4c-c797-431c-a416-8b9d1079eb0d.PNG)
+
+  </details>
+  
+  <details><summary>Wishlist</summary>
+ 
+  ![Wishlist](https://user-images.githubusercontent.com/93731898/196136521-4a7761f5-2303-4f22-92a8-e12460f70222.PNG)
+
+  </details>
+  
+  <details><summary>Profile Page</summary>
+
+  ![Profile](https://user-images.githubusercontent.com/93731898/196136562-8619d3eb-e7ae-4bde-b70e-dee903c389dd.PNG)
+
+  </details>
+
 
 ## Technologies used
 _______
