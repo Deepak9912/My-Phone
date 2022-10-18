@@ -62,8 +62,6 @@ _______
   -	[Github](#github)
   -	[Django and Heroku](#django-and-heroku)
   -	[Allauth](#allauth)
-- [Forking](#forking-the-repository)
-- [Cloning](#cloning)
 - [AWS Setup](#aws-set-up)
   - [IAM](#iam)
   - [Connecting AWS to Django](#connecting-aws-to-django)
@@ -669,29 +667,6 @@ Before creating the Heroku app make sure your project has the following files:
 ### Allauth
 
 Within the Django Framework, Allauth a package that handles registration and login details was installed. More information on how this was installed can be found here: [Django Allauth Installation](https://django-allauth.readthedocs.io/en/latest/installation.html)
-
-
-## Forking the Repository
-________
-
-* Log in to GitHub and locate the required GitHub repository.
-* At the top of the Repository, above the "Settings" button, locate the button labelled "Fork".
-* You should now have a copy of the original repository within your GitHub account.
-* You can make changes to this new version whilst keeping the original version safe.
-
-## Cloning
-________
-
-* Ensure that you are logged into GitHub and locate the required GitHub repository.
-* Click the dropdown button labelled 'Code' above the file list.
-* Copy the URL for the required repository.
-* Open Git Bash on your device.
-* Change the current working directory to the location where you want the cloned directory.
-* Type git clone in the CLI and then paste the URL you copied earlier.
-* Press Enter to create your local clone.
-* For more information on how to clone a repository read GitHub's [Cloning a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) document.
-
-[Back to top](#my-phone)
 
 ## AWS Set Up
 _______
