@@ -66,6 +66,10 @@ body {
     display: none;
 }
 
+.text-black {
+    color: #888c8f !important;
+}
+
 .logout {
     height: 32vh;
 }
