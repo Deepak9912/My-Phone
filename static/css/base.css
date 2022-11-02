@@ -555,6 +555,13 @@ footer a {
 }
 }
 
+@media (max-width: 1200px){
+    .product-image {
+        height: 100%;
+        width: fit-content;
+    }
+    }
+
 .phone_image {
     width: fit-content;
     height: 70vh;
