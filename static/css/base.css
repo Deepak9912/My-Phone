@@ -747,6 +747,52 @@ footer a {
     }
 }
 
+/*...................................Blog post */
+
+@media (max-width: 1000px) {
+    .blog-card {
+        display: block !important;
+    }
+    .blog-list-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+    }
+    .blog-desc {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 400px) {
+    .blog-detail-desc {
+        padding: 2rem !important;
+    }
+}
+
+.blog-card-image {
+    max-width: min(100%, 485px);
+}
+
+.blog-card-image-two {
+    max-width: min(100%, 700px);
+}
+
+.blog-list-container {
+    gap: 1rem;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+@media (max-width: 950px) {
+    .card-body h6 {
+        font-size: 0.8rem;
+    }
+}
+
 /*...................................Bag */
 .table-image-width {
     width: 10%;
