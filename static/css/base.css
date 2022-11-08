@@ -712,6 +712,10 @@ footer a {
 }
 
 /*...................................Wishlist */
+.wishlist {
+    height: 50vh;
+}
+
 .phone_img_card_container {
     height: 200px;
     text-align: center;
