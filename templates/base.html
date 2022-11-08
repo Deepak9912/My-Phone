@@ -10,8 +10,10 @@
   <meta charset="utf-8">
   <!-- SEO -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="My phone provides the best deals on mobile phones, we provide the best deal on mobile phones and offer price match as well.">
-  <meta name="keywords" content="mobile phones, phones, smartphones, price match guarantee, best deals, customer service, fast delivery">
+  <meta name="description"
+    content="My phone provides the best deals on mobile phones, we provide the best deal on mobile phones and offer price match as well.">
+  <meta name="keywords"
+    content="mobile phones, phones, smartphones, price match guarantee, best deals, customer service, fast delivery">
   <meta name="google-site-verification" content="LkyVPgnx_xtnznxRanOuGW8u4imIeNkYAK9IjwoJGTo">
   <!-- SEO -->
   {% endblock %}
@@ -81,45 +83,50 @@
       <!--right column with my account section-->
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
         <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-           <li class="list-inline-item dropdown">
-              <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
-                 aria-haspopup="true" aria-expanded="false">
-                 <div class="text-center">
-                    <div><i class="fas fa-user fa-lg text-light"></i></div>
-                    <p class="my-0 text-light">My Account</p>
-                 </div>
-              </a>
-              <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                 {% if request.user.is_authenticated %}
-                 {% if request.user.is_superuser %}
-                 <a href="{% url 'add_product' %}" aria-label="Go to the add product page" class="dropdown-item">Product Management</a>
-                 <a href="{% url 'view_wishlist' %}" class="dropdown-item">Your Wishlist</a>
-                 {% endif %}
-                 <a href="{% url 'profile' %}" aria-label="Go to the profile page" class="dropdown-item">Profile</a>
-                 <a href="{% url 'account_logout' %}" aria-label="Go to the accout logout page" class="dropdown-item">Logout</a>
-                 {% else %}
-                 <a href="{% url 'account_signup' %}" aria-label="Go to the signuppage" class="dropdown-item">Register</a>
-                 <a href="{% url 'account_login' %}" aria-label="Go to the login page" class="dropdown-item">Login</a>
-                 {% endif %}
+          <li class="list-inline-item pr-4"><a href="{% url 'view_wishlist' %}"><i
+                class="text-center fas fa-heart fa-beat fa-lg"></i></a></li>
+          <li class="list-inline-item dropdown">
+            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div class="text-center">
+                <div><i class="fas fa-user fa-lg text-light"></i></div>
+                <p class="my-0 text-light">My Account</p>
               </div>
-           </li>
-           <li class="list-inline-item">
-              <a  href="{% url 'view_bag' %}" aria-label="Go to the view bag page" class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link">
-                 <div class="text-center">
-                    <div><i class="fas fa-shopping-bag fa-lg text-light"></i></div>
-                    <p class="my-0 text-light">
-                       {% if grand_total %}
-                       €{{ grand_total|floatformat:2 }}
-                       {% else %}
-                       €0.00
-                       {% endif %}
-                    </p>
-                 </div>
-              </a>
-           </li>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+              {% if request.user.is_authenticated %}
+              {% if request.user.is_superuser %}
+              <a href="{% url 'add_product' %}" aria-label="Go to the add product page" class="dropdown-item">Product
+                Management</a>
+              <a href="{% url 'view_wishlist' %}" class="dropdown-item">Your Wishlist</a>
+              {% endif %}
+              <a href="{% url 'profile' %}" aria-label="Go to the profile page" class="dropdown-item">Profile</a>
+              <a href="{% url 'account_logout' %}" aria-label="Go to the accout logout page"
+                class="dropdown-item">Logout</a>
+              {% else %}
+              <a href="{% url 'account_signup' %}" aria-label="Go to the signuppage" class="dropdown-item">Register</a>
+              <a href="{% url 'account_login' %}" aria-label="Go to the login page" class="dropdown-item">Login</a>
+              {% endif %}
+            </div>
+          </li>
+          <li class="list-inline-item">
+            <a href="{% url 'view_bag' %}" aria-label="Go to the view bag page"
+              class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link">
+              <div class="text-center">
+                <div><i class="fas fa-shopping-bag fa-lg text-light"></i></div>
+                <p class="my-0 text-light">
+                  {% if grand_total %}
+                  €{{ grand_total|floatformat:2 }}
+                  {% else %}
+                  €0.00
+                  {% endif %}
+                </p>
+              </div>
+            </a>
+          </li>
         </ul>
-     </div>
-  </div>
+      </div>
+    </div>
     <div class="row bg-white">
       <nav class="navbar navbar-expand-lg navbar-light w-100">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
@@ -184,8 +191,10 @@
         <div class="col-lg-4">
           <p class="link-dark text-decoration-none me-3">Ph: 01800990090</p>
           <p class="link-dark text-decoration-none">Email: myphone@example.com</p>
-          <p class="link-dark text-decoration-none"><a href="{% url 'view_wishlist' %}" class="text-reset">Your Wishlist</a></p>
-          <p class="link-dark text-decoration-none"><a href="{% url 'view_bag' %}" class="text-reset">View Shopping Basket</a></p>
+          <p class="link-dark text-decoration-none"><a href="{% url 'view_wishlist' %}" class="text-reset">Your
+              Wishlist</a></p>
+          <p class="link-dark text-decoration-none"><a href="{% url 'view_bag' %}" class="text-reset">View Shopping
+              Basket</a></p>
         </div>
       </div>
     </div>
