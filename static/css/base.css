@@ -797,6 +797,15 @@ footer a {
     }
 }
 
+@media(min-width: 960px) {
+    .product-container-body-blog {
+        padding-top: 16rem;
+        margin-bottom: 2rem;
+    }
+    .blog-card-image-two {
+        margin-top: 5rem;
+    }
+    }
 /*...................................Bag */
 .table-image-width {
     width: 10%;
@@ -834,11 +843,7 @@ footer a {
     }
 }
 
-@media(min-width: 960px) {
-.product-container-body-blog {
-    padding-top: 16rem;
-}
-}
+
 
 /*...................................Wishlist*/
 .wishlist_left {
