@@ -770,7 +770,7 @@ footer a {
 }
 
 .blog-row {
-    height: 50vh;
+    height: 50%;
 }
 
 .blog-card-image {
@@ -832,6 +832,12 @@ footer a {
     .table-text {
         font-size: 14px;
     }
+}
+
+@media(min-width: 960px) {
+.product-container-body-blog {
+    padding-top: 16rem;
+}
 }
 
 /*...................................Wishlist*/
