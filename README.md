@@ -6,7 +6,8 @@ My-Phone is a full-stack Django website built using Python, JavaScript, HTML and
 
 [My-Phone live link](https://my-phone2234.herokuapp.com/)
 
-![WELCOME-IMG](https://user-images.githubusercontent.com/93731898/196056627-b670fd06-81be-4fc7-8c12-0f82ad1c7c3a.PNG)
+![home-image](https://user-images.githubusercontent.com/93731898/200924561-2325cfe3-5447-4e7a-a893-1b60c78d693f.PNG)
+
 
 ## Aim
 ________
@@ -35,6 +36,7 @@ _______
   -	[User Profile](#user-profile)
   -	[Wishlist](#wishlist)
   -	[Admin](#admin)
+  -	[Blog](#blog)
     - [Add Product](#add-product)
     - [Edit Product](#edit-product)
     - [Delete Product](#delete-product)
@@ -194,6 +196,13 @@ Registered users have an option to view their Wishlist and the products that hav
 ### Admin
 
 The products feature of the site all follow CRUD functionality allowing the admin user to create, read, update, and delete products and cocktails on the site. This functionality can all be done through the front end of the site, providing updated messages at each stage.
+
+### Blog
+
+The blog section is where admin can post a blog for the users to read. Below is the image, where a blog has been posted by admin and user can click to expand the page, it will bring the user to blog details page where user can read full blog.
+
+![blog](https://user-images.githubusercontent.com/93731898/200925263-90550d08-8af7-422c-8249-e4a17f6e5439.PNG)
+
 
   #### Add Product
 
