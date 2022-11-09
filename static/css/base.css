@@ -769,6 +769,10 @@ footer a {
     }
 }
 
+.blog-row {
+    height: 50vh;
+}
+
 .blog-card-image {
     max-width: min(100%, 485px);
 }
