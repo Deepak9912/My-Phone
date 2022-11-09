@@ -32,6 +32,8 @@ urlpatterns = [
     path('summernote/', include('django_summernote.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+
+handler400 = 'my_phone.views.handler400'
 handler404 = 'my_phone.views.handler404'
 handler500 = 'my_phone.views.handler500'
-handler400 = 'my_phone.views.handler400'
+
