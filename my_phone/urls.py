@@ -36,4 +36,3 @@ urlpatterns = [
 handler400 = 'my_phone.views.handler400'
 handler404 = 'my_phone.views.handler404'
 handler500 = 'my_phone.views.handler500'
-

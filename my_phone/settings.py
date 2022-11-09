@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'django.contrib.humanize',
+    'django.contrib.sitemaps',
 
     # intsalled apps
     'home',
