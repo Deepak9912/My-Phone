@@ -238,8 +238,9 @@ _______
 
 Entity Relationship Databases (ERD) were created to help develop this project. 
 
-![databaseschema](https://user-images.githubusercontent.com/93731898/196057492-198eaf1c-8442-4d35-9f17-86d47c7323bc.PNG)
+![ERD](https://user-images.githubusercontent.com/93731898/201165179-7a9f2fd4-2992-4ac6-bd06-1d4d7372a6ba.PNG)
 
+The custom models used were 'Blog', 'Review', 'Wishlist'. The 'Review' model was integrated within the product app and is responsible for the insertion of a review on a product detail page. Finally, the 'Wishlist' app is responsible for handling the wishlist section of the website.
 
 [Back to top](#my-phone)
 
